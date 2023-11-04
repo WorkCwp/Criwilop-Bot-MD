@@ -9,7 +9,7 @@
 </p>
 
 ## 𝐕𝐈𝐒𝐈𝐓𝐀𝐒 🔍
-<p align="center"><img src="https://profile-counter.glitch.me/{ERLANRAMAT}/count.svg" alt="neoxr :: Visitor's Count" /></p>
+<p align="center"><img src="https://profile-counter.glitch.me/{Criwilop}/count.svg" alt="neoxr :: Visitor's Count" /></p>
 
 ### `♰ GRUPO OFICIAL`
 
