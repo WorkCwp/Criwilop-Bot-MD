@@ -8,7 +8,7 @@
   <a href="https://github.com/WorkCwp"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦;WhatsApp+BOT-MD;Developed+by+♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦;apollame+con+una+🌟" alt="CwpReadme"></a>
 </p>
 
-## 𝐕𝐈𝐒𝐈𝐓𝐀𝐒 🔍
+## 𝑣𝑖𝑠𝑡𝑎𝑠 👀
 <p align="center"><img src="https://profile-counter.glitch.me/{Criwilop}/count.svg" alt="neoxr :: Visitor's Count" /></p>
 
 ### `♰ GRUPO OFICIAL`
