@@ -28,11 +28,16 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ◆━━━━━━━━▣✦▣━━━━━━━━━◆
 ➢ *𝗛ola, ${taguser}*
 ◆━━━━━━━━▣✦▣━━━━━━━━━◆
-➢ *Owner:* ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦
-➢ *Numero:* wa.me/573244488043
-➢ *Bot ofc:* wa.me/3003025991
-➢ *PayPal:* https://www.paypal.me/3244488043
- 
+┣ ➢ *Owner:* ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦
+┣ ➢ *Numero:* wa.me/573244488043
+┣
+┣ ➢ *Colab1:* *† 𝑀𝑐𝐹𝑙𝑦 †*
+┣ ➢ *Numero:* wa.me/5492216804640
+┣
+┣ ➢ *colab2:* *༒𝙑𝙄𝘾𝙏𝙊𝙍_𝘽𝙄𝙕𝙀𝙍𝘼𝙋༒*
+┣ ➢ *Numero:* wa.me/59897758548
+┣
+┣ ➢ *PayPal:* https://www.paypal.me/3244488043
 *╚═════❖•ೋ° °ೋ•❖═════╝*
 ${readMore}
 *╔═══❖•ೋ° °ೋ•❖═══╗*
@@ -561,4 +566,4 @@ function clockString(ms) {
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
   return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':');
-}
+      }
