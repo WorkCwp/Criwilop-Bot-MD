@@ -35,7 +35,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/WorkCwp/Criwilop-Bot-MD.git && cd TheMystic-Bot-MD
+git clone https://github.com/WorkCwp/Criwilop-Bot-MD.git && cd Criwilop-Bot-MD
 ```
 
 ```bash
@@ -58,7 +58,7 @@ npm start
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd Mystic-termux
+> cd Criwilop-Bot-MD
 > npm start
 ```
 
@@ -67,7 +67,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd Mystic-termux
+> cd Criwilop-Bot-MD
 > rm -rf CwpSession
 > npm start
 ```
