@@ -20,8 +20,9 @@
 
 <a href="https://wa.me/573244488043"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾` 
+### ` ☘️ ACTIVAR EN TERMUX ☘️` 
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+- 
 ```bash
 cd && termux-setup-storage
 ```
@@ -54,21 +55,36 @@ npm update
 npm start
 ```
 
-### `—◉ ✔️ ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️`
-```bash
+### `ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️`
+
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
+
+```bash
+> cd
+```
+```bash
 > cd Criwilop-Bot-MD
+```
+```bash
 > npm start
 ```
 
+
 ### `—◉ 👽 OBTENER OTRO CODIGO QR EN TERMUX 👽`
-- DETENER EL BOT DANDO CLICK EN EL SIMBOLO CTROL EN TERMUX MAS LA LETRA Z EN SU TECLADO MOVIL HASTA QUE SALGA ALGO EN VERDE SIMILAR A Mystic-termux $  
-```bash
+- DETENER EL BOT DANDO CLICK EN EL SIMBOLO CTROL EN TERMUX MAS LA LETRA Z EN SU TECLADO MOVIL HASTA QUE SALGA ALGO EN VERDE SIMILAR A Mystic-termux $
+
+
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
+```bash
+> cd
+```
+```bash
 > cd Criwilop-Bot-MD
+```
+```bash
 > rm -rf CwpSession
+```
+```bash
 > npm start
 ```
 
