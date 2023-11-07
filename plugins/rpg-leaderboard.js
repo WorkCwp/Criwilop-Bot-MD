@@ -43,6 +43,7 @@ ${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.s
 };
 handler.help = ['top'];
 handler.tags = ['xp'];
+handler.private = true;
 handler.command = ['leaderboard', 'lb'];
 handler.fail = null;
 export default handler;
