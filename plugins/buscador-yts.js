@@ -9,10 +9,10 @@ const handler = async (m, {conn, text}) => {
     switch (v.type) {
       case 'video': return `
 ° *_${v.title}_*
-↳ 🫐 *_Link :_* ${v.url}
-↳ 🕒 *_Duración :_* ${v.timestamp}`;
+⍣ 🔗 *_Link :_* ${v.url}
+⍣ ⏳ *_Duración :_* ${v.timestamp}`;
     }
-  }).filter((v) => v).join('\n\n━━━━━━━ •♬• ━━━━━━━\n\n');
+  }).filter((v) => v).join('\n\n━━━━━━━━━━━━━━ •♬• ━━━━━━━━━━━━━━\n\n');
   conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m);
 };
 handler.help = ['ytsearch *<texto>*'];
