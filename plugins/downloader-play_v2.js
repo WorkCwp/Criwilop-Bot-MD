@@ -31,6 +31,7 @@ if (enviando) return;
     } else {
       try {
         if (command === 'play') {
+              m.react('🎧'(
               apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
@@ -44,6 +45,7 @@ if (enviando) return;
       } catch {
           try {
             if (command === 'play1') {
+              m.react('🎥')
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
@@ -62,7 +64,7 @@ if (enviando) return;
     }m.react('☑️')
 
     const dataMessage = `*⍣ 🔗 Titulo🍁:* *${data.resultado.title}*
-    *⍣URL:* ${data.resultado.url}`;
+*⍣URL:* ${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     
     if (buff) {
