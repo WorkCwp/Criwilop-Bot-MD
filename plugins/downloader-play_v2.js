@@ -59,9 +59,10 @@ if (enviando) return;
             throw `*⚠️ Error al descargar el video/canción desde las APIs disponibles.`;
           }
        }
-    }
+    }m.react('☑️')
 
-    const dataMessage = `*⍣ 🔗 Titulo🍁:* *${data.resultado.title}*/n*⍣URL:* ${data.resultado.url}`;
+    const dataMessage = `*⍣ 🔗 Titulo🍁:* *${data.resultado.title}*
+    *⍣URL:* ${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     
     if (buff) {
