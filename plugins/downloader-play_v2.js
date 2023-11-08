@@ -61,7 +61,7 @@ if (enviando) return;
        }
     }
 
-    const dataMessage = `*⍣ 🔗 Titulo🍁:* * ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* * ${data.resultado.channel}\n* `;
+    const dataMessage = `*⍣ 🔗 Titulo🍁:* * ${data.resultado.title}*/n⍣ 👤 Autor🍁:* *${data.resultado.channel}*`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     
     if (buff) {
