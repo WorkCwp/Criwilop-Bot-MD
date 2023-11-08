@@ -78,5 +78,5 @@ if (enviando) return;
 };
 handler.help = ['play', 'play2'].map((v) => v + ' <texto>');
 handler.tags = ['downloader'];
-handler.command = ['play.1', 'play.2'];
+handler.command = ['play', 'play2'];
 export default handler;
