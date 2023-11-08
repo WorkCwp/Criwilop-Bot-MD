@@ -62,7 +62,7 @@ if (enviando) return;
           }
        }
     }
-m.react('☑️')
+
     const dataMessage = `*⍣ 🔗 Titulo🍁:* * ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* * ${data.resultado.channel}\n* `;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     
