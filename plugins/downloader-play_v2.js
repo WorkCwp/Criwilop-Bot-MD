@@ -66,7 +66,8 @@ if (enviando) return;
     }m.react('☑️')
 
     const dataMessage = `*⍣ 🔗 Titulo🍁:* *${data.resultado.title}*
-*⍣URL:* ${data.resultado.url}`;
+
+${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     
     if (buff) {
