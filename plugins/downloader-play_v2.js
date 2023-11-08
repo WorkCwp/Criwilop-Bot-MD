@@ -53,7 +53,7 @@ if (enviando) return;
               mimeType = 'video/mp4';
               fileName = 'error.mp4';
               buff = await conn.getFile(apiUrl);
-            }
+           }
           } catch {
             enviando = false;
             throw `*⚠️ Error al descargar el video/canción desde las APIs disponibles.`;
@@ -61,9 +61,8 @@ if (enviando) return;
        }
     }
 
-    const dataMessage = `*⍣ 🔗 *Titulo🍁:* ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* ${data.resultado.channel}\n* `;
+    const dataMessage = `*⍣ 🔗 *Titulo🍁:* ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* *${data.resultado.channel}\n* `;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
-    await conn.sendMessage(m.chat, {image: {${data.resultado.url}}, caption: texto1}, {quoted: m});
     
     if (buff) {
       await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName}, {quoted: m});
