@@ -63,7 +63,7 @@ if (enviando) return;
 
     const dataMessage = `*⍣ 🔗 *Titulo🍁:* ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* ${data.resultado.channel}\n* `;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
-    conn.sendMessage(m.chat, {image: {${data.resultado.url}}, caption: texto1}, {quoted: m});
+    await conn.sendMessage(m.chat, {image: {${data.resultado.url}}, caption: texto1}, {quoted: m});
     
     if (buff) {
       await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName}, {quoted: m});
