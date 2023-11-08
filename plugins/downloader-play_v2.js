@@ -6,7 +6,7 @@ let fileName;
 let apiUrl;
 let enviando = false;
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:*\n*${usedPrefix + command}* Good Feeling - Flo Rida\n*—◉ Ejemplo 2:*\n*${usedPrefix + command}* https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p`;
+  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:*\n*${usedPrefix + command}* Kevin kaarl colapso\n*—◉ Ejemplo 2:*\n*${usedPrefix + command}*`;
 if (enviando) return;
     enviando = true
   try {
@@ -30,12 +30,12 @@ if (enviando) return;
       throw `*⚠️ No se pudo obtener la URL del video/canción.*`;
     } else {
       try {
-        if (command === 'play.1') {
+        if (command === 'play') {
               apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
               buff = await conn.getFile(apiUrl);
-            } else if (command === 'play.2') {
+            } else if (command === 'play2') {
               apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
               mimeType = 'video/mp4';
               fileName = 'error.mp4';
@@ -43,12 +43,12 @@ if (enviando) return;
         }
       } catch {
           try {
-            if (command === 'play.1') {
+            if (command === 'play1') {
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
               buff = await conn.getFile(apiUrl);
-            } else if (command === 'play.2') {
+            } else if (command === 'play2') {
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
               mimeType = 'video/mp4';
               fileName = 'error.mp4';
@@ -61,7 +61,7 @@ if (enviando) return;
        }
     }
 
-    const dataMessage = `*=> Título:* ${data.resultado.title}\n*=> Canal:* ${data.resultado.channel}\n*=> URL:* ${data.resultado.url}\n*=> Publicado:* ${data.resultado.publicDate}`;
+    const dataMessage = `*⍣ 🔗 *Titulo🍁:* ${data.resultado.title}\n*⍣ 👤 *Autor🍁:* ${data.resultado.channel}\n* `;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
