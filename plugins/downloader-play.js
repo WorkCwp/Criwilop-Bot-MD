@@ -69,7 +69,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
+handler.help = ['play-fix', 'play2-fix'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
 handler.command = /^(play|play2)$/i;
 export default handler;
