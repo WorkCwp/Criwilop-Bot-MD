@@ -12,12 +12,6 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 
 --------------------------------
 
-*Opción:* 🥵 | MODO HORNY
-*Comando:* ${usedPrefix + command} modohorny
-*Descripción:* Activa o desactiva los comandos +18 en el grupo.
-
---------------------------------
-
 *Opción:* 🔗 | ANTILINK
 *Comando:* ${usedPrefix + command} antilink
 *Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
