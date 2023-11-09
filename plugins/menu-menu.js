@@ -3,7 +3,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
       m.react('🍰')
-    const imagenes = ['/Menu.png', './Menu.png', './Menu.png', './Menu.png'];
+    const imagenes = ['imagen1', 'imagen2', 'imagen3', 'imagen4'];
     const pp = imagenes[Math.floor(Math.random() * imagenes.length)];
    
     // let vn = './media/menu.mp3'
