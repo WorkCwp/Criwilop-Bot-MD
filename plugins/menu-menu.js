@@ -7,7 +7,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const indiceRandom = Math.floor(Math.random() * M.length);
   */
       m.react('🍰')
-   const pp = imagen1;
+   const pp = imagen2;
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
