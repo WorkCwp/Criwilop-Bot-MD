@@ -29,13 +29,13 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ◆━━━━━━━━▣✦▣━━━━━━━━━◆
 ┣ ➢ *Owner:* ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦
 ┣ ➢ *Numero:* wa.me/573244488043
-┣
-┣ ➢ *Colab1:* *† 𝑀𝑐𝐹𝑙𝑦 †*
+┃
+┣➢ *Colab1:* *† 𝑀𝑐𝐹𝑙𝑦 †*
 ┣ ➢ *Numero:* wa.me/5492216804640
-┣
+┃
 ┣ ➢ *colab2:* *༒𝙑𝙄𝘾𝙏𝙊𝙍_𝘽𝙄𝙕𝙀𝙍𝘼𝙋༒*
 ┣ ➢ *Numero:* wa.me/59897758548
-┣
+┃
 ┣ ➢ *PayPal:* https://www.paypal.me/3244488043
 *╚═════❖•ೋ° °ೋ•❖═════╝*
 ${readMore}
@@ -64,7 +64,6 @@ ${readMore}
 *╔═══❖•ೋ° °ೋ•❖═══╗*
 ┃    *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
 ◆━━━━━━▣✦▣━━━━━━━◆
-┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
 ┣ ඬ⃟ 💟 _${usedPrefix}estado_
 ┣ ඬ⃟ 💟 _${usedPrefix}infobot_
@@ -87,23 +86,6 @@ ${readMore}
 ┣ ඬ⃟ 🤖 _${usedPrefix}serbot --code_
 ┣ ඬ⃟ 🤖 _${usedPrefix}serbot_
 ┣ ඬ⃟ 🤖 _${usedPrefix}deletebot_
-┣ ඬ⃟ 🤖 _${usedPrefix}token
-┣ ඬ⃟ 🤖 _${usedPrefix}stop_
-┣ ඬ⃟ 🤖 _${usedPrefix}bots_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable restrict_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable restrict_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable autoread_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable autoread_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable antispam_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable antispam_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable anticall_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable anticall_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable modoia_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable modoia_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable audios_bot_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable audios_bot_
-┣ ඬ⃟ 🤖 _${usedPrefix}enable antiprivado_
-┣ ඬ⃟ 🤖 _${usedPrefix}disable antiprivado_
 *╚═══❖•ೋ° °ೋ•❖═══╝* 
 
 *╔═══❖•ೋ° °ೋ•❖═══╗*
@@ -142,37 +124,6 @@ ${readMore}
 ┣ ඬ⃟ 🎖️ _${usedPrefix}pista_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}akinator_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}wordfind_
-*╚═══❖•ೋ° °ೋ•❖═══╝*
-
-*╔═══❖•ೋ° °ೋ•❖═══╗*
-┃ *< 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ />*
-◆━━━━━━━━▣✦▣━━━━━━━━━◆
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *welcome*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *welcome*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *modohorny*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *modohorny*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antilink*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antilink*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antilink2*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antilink2*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *detect*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *detect*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *audios*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *audios*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *autosticker*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *autosticker*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antiviewonce*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antiviewonce*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antitoxic*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antitoxic*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antitraba*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antitraba*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antiarabes*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antiarabes*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *modoadmin*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *modoadmin*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antidelete*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antidelete*_
 *╚═══❖•ೋ° °ೋ•❖═══╝*
 
 *╔═══❖•ೋ° °ೋ•❖═══╗*
@@ -229,7 +180,6 @@ ${readMore}
 ┣ ඬ⃟ 🔍 _${usedPrefix}modapk *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch2 *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}xnxxsearch *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}animeinfo *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}google *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}letra *<texto>*_
@@ -291,15 +241,6 @@ ${readMore}
 ┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
 ◆━━━━━━━━▣✦▣━━━━━━━━━◆
 ┣ ඬ⃟ 🖍️ _${usedPrefix}logos *<efecto> <texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}logochristmas *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}logocorazon *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}ytcomment *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}hornycard *<@tag>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}simpcard *<@tag>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}lolice *<@tag>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}itssostupid_
-┣ ඬ⃟ 🖍️ _${usedPrefix}pixelar_
-┣ ඬ⃟ 🖍️ _${usedPrefix}blur_
 *╚═══❖•ೋ° °ೋ•❖═══╝*
 
 *╔═══❖•ೋ° °ೋ•❖═══╗*
@@ -347,12 +288,6 @@ ${readMore}
 ┣ ඬ⃟ 👾 _${usedPrefix}hacker_
 ┣ ඬ⃟ 👾 _${usedPrefix}planeta_
 ┣ ඬ⃟ 👾 _${usedPrefix}randomprofile_
-*╚═══❖•ೋ° °ೋ•❖═══╝*
-
-*╔═══❖•ೋ° °ೋ•❖═══╗*
-┃ *< ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠 />*
-◆━━━━━━━━▣✦▣━━━━━━━━━◆
-┣ ඬ⃟ 🔞 _${usedPrefix}labiblia_
 *╚═══❖•ೋ° °ೋ•❖═══╝*
 
 *╔═══❖•ೋ° °ೋ•❖═══╗*
