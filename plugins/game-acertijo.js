@@ -25,7 +25,7 @@ const handler = async (m, {conn, usedPrefix}) => {
       delete conn.tekateki[id];
     }, timeout)];
 };
-handler.help = ['acertijo'];
+handler.help = ['quiz'];
 handler.tags = ['game'];
-handler.command = /^(quiz|quis|pregunta)$/i;
+handler.command = /^(quiz|quis)$/i;
 export default handler;
