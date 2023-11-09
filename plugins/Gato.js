@@ -2,16 +2,13 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   try {
-    const response = await fetch('https://api.thecatapi.com/v1/images/search');
-    const data = await response.json();
-    const imageUrl = data[0].url;
-
-    const message = `¡Aquí tienes una imagen aleatoria de un gato para alegrar tu día! 😺\n${imageUrl}`;
-
-    conn.reply(m.chat, message, m);
-  } catch (error) {
-    conn.reply(m.chat, '¡Oh no! Parece que los gatos están de huelga en este momento. 😿 Intenta de nuevo más tarde.', m);
-  }
+    const res = await fetch('https://api.thecatapi.com/v1/images/search');
+    const img = await res.json();
+    const caption = `_♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_`.trim();
+    conn.sendFile(m.chat, img[0].url, 'cat.jpg', caption, m);
+  } catch {
+    throw '*Error!*';
+    }
 };
 
 handler.command = /^gato$/i;
