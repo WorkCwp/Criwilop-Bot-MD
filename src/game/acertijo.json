@@ -1,3 +1,11 @@
+
+Acertijos Divertidos Actualizados
+
+Default (GPT-3.5)
+
+User
+Tengo un código en JSON que contiene preguntas con su respectiva respuesta, quiero que cambies todos y cada uno de los acertijos que contiene y pongas algo divertido:
+
 [
     {
         "question": "¿Qué le dice un pingüino a otro pingüino?",
@@ -215,3 +223,577 @@
        "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
        "response": "El aire"
 }
+]
+
+ChatGPT
+¡Listo! Aquí tienes los acertijos actualizados:
+
+[
+{
+"question": "¿Por qué los pájaros no usan Facebook?",
+"response": "Porque ya tienen Twitter"
+},
+{
+"question": "¿Cómo llama un pez a otro pez?",
+"response": "¡Hola, pececillo!"
+},
+{
+"question": "¿En qué se parece un espejo a un abrazo?",
+"response": "En que te devuelve el cariño"
+},
+{
+"question": "¿Qué se derrite cuando se enoja?",
+"response": "El chocolate"
+},
+{
+"question": "¿Qué fruta tiene un doctor?",
+"response": "La manzana"
+},
+{
+"question": "¿Cómo se comunican dos átomos?",
+"response": "Por medio de mensajes subatómicos"
+},
+{
+"question": "¿Cómo llama un chef a su cuchillo?",
+"response": "Su cuchillo de corte"
+},
+{
+"question": "¿Qué tiene muchas ideas pero nunca habla?",
+"response": "La mente creativa"
+},
+{
+"question": "¿Cuál es el colmo de un gato?",
+"response": "Que le rasquen donde no pica"
+},
+{
+"question": "¿Qué siempre está en el pasado pero nunca en el presente?",
+"response": "La historia"
+},
+{
+"question": "¿Qué necesitas para bailar mientras duermes?",
+"response": "Sueños de baile"
+},
+{
+"question": "¿Qué objeto puede sonreír sin tener boca?",
+"response": "Un arco iris"
+},
+{
+"question": "Alimenta la casa, Gabinete con hielo",
+"response": "La nevera congeladora"
+},
+{
+"question": "¿Qué tienen las jirafas entre las patas?",
+"response": "¡Las otras jirafas!"
+},
+{
+"question": "Entra duro y seco y sale blandito y mojado ¿Qué es?",
+"response": "Un algodón de azúcar"
+},
+{
+"question": "Estoy en todo y estoy en nada ¿qué soy?",
+"response": "La letra 'a'"
+},
+{
+"question": "Continuas en rojo, pero te paras en verde. ¿Qué soy?",
+"response": "Una sandía en el semáforo"
+},
+{
+"question": "¿Qué es negro cuando lo compras, rojo cuando lo usas, y gris cuando lo tiras?",
+"response": "El carbón de la barbacoa"
+},
+{
+"question": "¿Qué hay delante de ti siempre pero que no se puede ver?",
+"response": "El futuro"
+},
+{
+"question": "¿Qué mes tiene 28 días?",
+"response": "Todos, pero febrero tiene uno más"
+},
+{
+"question": "¿Cómo puede estar alguien sin dormir diez días y no tener sueño?",
+"response": "Porque está despierto de día"
+},
+{
+"question": "¿De qué llenarías un barril para que pese lo menos posible?",
+"response": "De agujeros"
+},
+{
+"question": "Si durante una carrera adelantas a quien va segundo, ¿en qué posición estás?",
+"response": "Segundo"
+},
+{
+"question": "¿En qué lugar el jueves va antes que el miércoles?",
+"response": "En el diccionario"
+},
+{
+"question": "¿Qué sube y baja pero se queda siempre en el mismo sitio?",
+"response": "Las escaleras mecánicas"
+},
+{
+"question": "¿Cómo llaman a un ascensor en China?",
+"response": "Apretando el botón mágico"
+},
+{
+"question": "¿Qué es lo primero que hace un elefante al salir el sol?",
+"response": "Crear una sombra gigante"
+},
+{
+"question": "¿Por qué un Tiranosaurus Rex no puede aplaudir?",
+"response": "Porque está extinguido y sin manos"
+},
+{
+"question": "¿Qué animal siempre está lleno?",
+"response": "La ballena de aventuras"
+},
+{
+"question": "¿Qué es lo primero que todos hacemos al despertar?",
+"response": "Cerrar los ojos"
+},
+{
+"question": "¿Cuál es el número que si le quitas la mitad, vale 0?",
+"response": "El cero"
+},
+{
+"question": "¿Qué se necesita para encender una vela?",
+"response": "Que esté apagada, ¡obviamente!"
+},
+{
+"question": "¿Cuál es el país donde termina todo?",
+"response": "Finlandia, el país del fin"
+},
+{
+"question": "La respuesta a esta pregunta es #######",
+"response": "¡Redacta tu propia respuesta creativa! #######"
+},
+{
+"question": "Cuál es el final de todo",
+"response": "La letra 'o', el último"
+},
+{
+"question": "¿Dónde se encuentra una pared con otra pared?",
+"response": "En la esquina, ¡obvio!"
+},
+{
+"question": "¿Qué tiene muchas palabras, pero nunca habla?",
+"response": "Un libro, el más elocuente"
+},
+{
+"question": "¿Qué cosa te pertenece, pero los demás usan más que tú?",
+"response": "Tu nombre, la marca de identidad"
+},
+{
+"question": "¿En qué momento una persona se convierte en fruta?",
+"response": "Cuando espera, ¡frutífera paciencia!"
+},
+{
+"question": "Los padres de José tienen tres hijos: Luis, Raúl y…, ¿cómo se llama el tercero?",
+"response": "José, ¡como se menciona al principio!"
+},
+{
+"question": "¿Qué palabra del diccionario se escribe incorrectamente?",
+"response": "Incorrectamente, ¡literalmente!"
+},
+{
+"question": "Húmedo por dentro, con pelos por fuera. Comienza por la C. ¿De qué se trata?",
+"response": "Un coco, ¡exótico y misterioso!"
+},
+{
+"question": "David y Fabián están jugando al ajedrez. Llevan 5 partidas,
+
+
+
+
+User
+Tengo un código en JSON que contiene preguntas con su respectiva respuesta, quiero que cambies todas las preguntas y respuestas por preguntas sobre la mitología griega, añade tantas preguntas como quieras, preferiblemente deben ser más de 50:
+
+[
+    {
+        "question": "¿Qué le dice un pingüino a otro pingüino?",
+        "response": "Te quiero como a ningüino"
+    },
+    {
+        "question": "¿Qué le dice un ciego a otro ciego?",
+        "response": "Después nos vemos"
+    },
+    {
+        "question": "¿En qué se parece un alfiler a un policía?",
+        "response": "En que los dos prenden"
+    },
+    {
+        "question": "¿Qué se congela cuando se calienta?",
+        "response": "La computadora"
+    },
+    {
+        "question": "¿Qué fruta tiene muchos ojos, pero no puede ver?",
+        "response": "La piña"
+    },
+    {
+        "question": "¿En qué idioma se comunican las tortugas?",
+        "response": "En tortugués"
+    },
+    {
+        "question": "¿Cómo llama un policía sevillano a su pistola?",
+        "response": "Mi arma"
+    },
+    {
+        "question": "¿Qué es todo para uno y nada para lo demás?",
+        "response": "La mente"
+    },
+    {
+        "question": "¿Cuál es el colmo de una aspiradora?",
+        "response": "Ser alérgica al polvo"
+    },
+    {
+        "question": "¿Qué es aquello que si nombras, desaparece?",
+        "response": "El silencio"
+    },
+    {
+        "question": "¿Qué necesitamos para escribir durmiendo?",
+        "response": "Estar despiertos"
+    },
+    {
+        "question": "¿Qué objeto puede tener cara sin poseer cuerpo?",
+        "response": "Una moneda"
+    },
+    {
+        "question": "Alimenta la casa, Gabinete con hielo",
+        "response": "La nevera"
+    },
+    {
+        "question": "¿Qué tienen las mujeres en medio de las piernas?",
+        "response": "Las rodillas"
+    },
+    {
+        "question": "Entra duro y seco y sale blandito y mojado ¿Qué es?",
+        "response": "Un chicle"
+    },
+    {
+        "question": "Estoy en todo y estoy en nada ¿qué soy?",
+        "response": "La letra d"
+    },
+    {
+        "question": "Continuas en rojo, pero te paras en verde. ¿Qué soy?",
+        "response": "Una sandía"
+    },
+    {
+        "question": "¿Qué es negro cuando lo compras, rojo cuando lo usas, y gris cuando lo tiras?",
+        "response": "El carbón"
+    },
+    {
+        "question": "¿Qué hay delante de ti siempre pero que no se puede ver?",
+        "response": "El futuro"
+    },
+    {
+        "question": "¿Qué mes tiene 28 días?",
+        "response": "Todos"
+    },
+    {
+        "question": "¿Cómo puede estar alguien sin dormir diez días y no tener sueño?",
+        "response": "Durmiendo por las noches"
+    },
+    {
+        "question": "¿De qué llenarías un barril para que pese lo menos posible?",
+        "response": "De agujeros"
+    },
+    {
+        "question": "Si durante una carrera adelantas a quien va segundo, ¿en qué posición estás?",
+        "response": "Segundo"
+    },
+    {
+        "question": "¿En qué lugar el jueves va antes que el miércoles?",
+        "response": "En el diccionario"
+    },
+    {
+        "question": "¿Qué sube y baja pero se queda siempre en el mismo sitio?",
+        "response": "Las escaleras"
+    },
+    {
+        "question": "¿Cómo llaman a un ascensor en China?",
+        "response": "Apretando el botón"
+    },
+    {
+        "question": "¿Qué es lo primero que hace un elefante al salir el sol?",
+        "response": "Sombra"
+    },
+    {
+        "question": "¿Por qué un Tiranosaurus Rex no puede aplaudir?",
+        "response": "Porque se extinguió"
+    },
+    {
+        "question": "¿Qué animal siempre está lleno?",
+        "response": "La ballena"
+    },
+    {
+        "question": "¿Qué es lo primero que todos hacemos al despertar?",
+        "response": "Abrir los ojos"
+    },
+    {
+        "question": "¿Cuál es el número que si le quitas la mitad, vale 0?",
+        "response": "El ocho"
+    },
+    {
+        "question": "¿Qué se necesita para encender una vela?",
+        "response": "Que esté apagada"
+    },
+    {
+        "question": "¿Cuál es el país donde termina todo?",
+        "response": "Finlandia"
+    },
+    {
+        "question": "La respuesta a esta pregunta es #######",
+        "response": "#######"
+    },
+    {
+        "question": "Cuál es el final de todo",
+        "response": "La letra o"
+    },
+    {
+        "question": "¿Dónde se encuentra una pared con otra pared?",
+        "response": "En la esquina"
+    },
+    {
+        "question": "¿Qué tiene muchas palabras, pero nunca habla?",
+        "response": "Un libro"
+    },
+    {
+        "question": "¿Qué cosa te pertenece, pero los demás usan más que tú?",
+        "response": "Tu nombre"
+    },
+    {
+        "question": "¿En qué momento una persona se convierte en fruta?",
+        "response": "Cuando espera"
+    },
+    {
+        "question": "Los padres de José tienen tres hijos: Luis, Raúl y…, ¿cómo se llama el tercero?",
+        "response": "José"
+    },
+    {
+        "question": "¿Qué palabra del diccionario se escribe incorrectamente?",
+        "response": "Incorrectamente"
+    },
+    {
+        "question": "Húmedo por dentro, con pelos por fuera. Comienza por la C. ¿De qué se trata?",
+        "response": "Un coco"
+    },
+    {
+        "question": "David y Fabián están jugando al ajedrez. Llevan 5 partidas, pero ambos han ganado 3. ¿Cómo es posible?",
+        "response": "Porque juegan con más personas"
+    },
+    {
+        "question": "¿Cuántos 9 hay entre el 1 y el 100?",
+        "response": "20"
+    },
+    {
+        "question": "Son dos abanicos que están todo el día sin parar, pero cuando te duermas se paran y quietos se quedarán",
+        "response": "Las pestañas"
+    },
+    {
+        "question": "Oro parece, plata no es y el que no lo adivine un tonto es",
+        "response": "Un platano"
+    },
+    {
+        "question": "Círculo bien redondo al que si le pegas, das un brinco del susto",
+        "response": "Un tambor"
+    },
+    {
+        "question": "Un caballo blanco entró en el Mar Negro. ¿Cómo salió?",
+        "response": "Salió mojado"
+    },
+    {
+        "question": "Si un tren eléctrico va de Norte a Sur, ¿Hacia qué lado echará el humo?",
+        "response": "Es eléctrico, no echa humo"
+    },
+    {
+       "question": "Tiene 4 letras, empieza por C y termina por O y esta en la parte trasera",
+        "response": "El codo"
+    },
+    {
+       "question": "Se estrella un avión y mueren todos, justo en la frontera entre España y Portugal ¿A que Hospital tienen que llevar a los supervivientes? ",
+        "response": "No hay supervivientes"
+    },
+    {
+       "question": "Este banco está ocupado por un padre y por un hijo, el padre se llama Juan y el hijo ya te lo he dicho",
+        "response": "Esteban"
+    },
+    {
+       "question": "Algunos meses tienen 31 días, otros solo 30.¿Cuantos tienen 28 días?",
+        "response": "Todos"
+    },
+    {
+       "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
+       "response": "El aire"
+}
+
+ChatGPT
+¡Claro! Aquí tienes preguntas sobre mitología griega:
+
+[
+{
+"question": "¿Quién es el dios del trueno en la mitología griega?",
+"response": "Zeus"
+},
+{
+"question": "¿Cuál es el nombre de la diosa del amor y la belleza?",
+"response": "Afrodita"
+},
+{
+"question": "¿Quién es el dios del sol en la mitología griega?",
+"response": "Apolo"
+},
+{
+"question": "¿Cuál es el animal sagrado de la diosa Artemisa?",
+"response": "Ciervo"
+},
+{
+"question": "¿Quién es el dios del mar en la mitología griega?",
+"response": "Poseidón"
+},
+{
+"question": "¿Cuál es el monstruo de muchos ojos que petrifica a quienes lo miran?",
+"response": "Medusa"
+},
+{
+"question": "¿Qué objeto mágico permitía a su poseedor volver invisible?",
+"response": "El casco de Hades"
+},
+{
+"question": "¿Quién es el dios de la guerra en la mitología griega?",
+"response": "Ares"
+},
+{
+"question": "¿Cuál es la criatura mitad toro y mitad hombre que habitaba el laberinto?",
+"response": "Minotauro"
+},
+{
+"question": "¿Quién es el mensajero de los dioses en la mitología griega?",
+"response": "Hermes"
+},
+{
+"question": "¿Cuál es el río que separa el mundo de los vivos y de los muertos?",
+"response": "Styx"
+},
+{
+"question": "¿Quién es la diosa de la sabiduría y la estrategia?",
+"response": "Atenea"
+},
+{
+"question": "¿Cuál es la famosa caja que no debía ser abierta, liberando males en el mundo?",
+"response": "La caja de Pandora"
+},
+{
+"question": "¿Quién es el dios del vino, la diversión y el teatro?",
+"response": "Dionisio"
+},
+{
+"question": "¿Cuál es el animal símbolo de la diosa Hera?",
+"response": "Pavo real"
+},
+{
+"question": "¿Quién es el titán que sostiene el mundo en sus hombros?",
+"response": "Atlas"
+},
+{
+"question": "¿Cuál es la diosa de la caza y protectora de la naturaleza salvaje?",
+"response": "Artemisa"
+},
+{
+"question": "¿Quién es la reina de los dioses en la mitología griega?",
+"response": "Hera"
+},
+{
+"question": "¿Cuál es el río de los recuerdos en el inframundo?",
+"response": "Leteo"
+},
+{
+"question": "¿Quién es el héroe que mató al Minotauro en el laberinto?",
+"response": "Teseo"
+},
+{
+"question": "¿Cuál es el monstruo mitad león y mitad águila que escupe fuego?",
+"response": "Quimera"
+},
+{
+"question": "¿Quién es el dios del fuego y la metalurgia?",
+"response": "Hefesto"
+},
+{
+"question": "¿Cuál es la diosa de la agricultura y las estaciones?",
+"response": "Deméter"
+},
+{
+"question": "¿Quién es el centauro sabio y educador de héroes como Aquiles?",
+"response": "Quirón"
+},
+{
+"question": "¿Cuál es el monstruo marino que amenazó a Andrómeda?",
+"response": "Ceto"
+},
+{
+"question": "¿Quién es el dios del sueño en la mitología griega?",
+"response": "Hipnos"
+},
+{
+"question": "¿Cuál es el gigante de cien ojos que todo lo ve?",
+"response": "Argos Panoptes"
+},
+{
+"question": "¿Quién es el dios del amor y deseo erótico?",
+"response": "Eros"
+},
+{
+"question": "¿Cuál es la diosa de la venganza?",
+"response": "Némesis"
+},
+{
+"question": "¿Quién es el dios de los mares y los terremotos?",
+"response": "Poseidón"
+},
+{
+"question": "¿Cuál es el río que fluye en el Hades y representa el olvido?",
+"response": "Lethe"
+},
+{
+"question": "¿Quién es la diosa de la caza y la luna?",
+"response": "Artemisa"
+},
+{
+"question": "¿Cuál es el monstruo de tres cuerpos y tres cabezas?",
+"response": "Tifón"
+},
+{
+"question": "¿Quién es el dios del sol y la poesía?",
+"response": "Apolo"
+},
+{
+"question": "¿Cuál es el animal que representa la transformación en la mitología griega?",
+"response": "Fénix"
+},
+{
+"question": "¿Quién es la diosa de la victoria?",
+"response": "Nike"
+},
+{
+"question": "¿Cuál es el monstruo mitad hombre y mitad toro creado por Hefesto?",
+"response": "Talos"
+},
+{
+"question": "¿Quién es el dios del comercio y los ladrones?",
+"response": "Hermes"
+},
+{
+"question": "¿Cuál es el ser mitad hombre y mitad caballo?",
+"response": "Centauro"
+},
+{
+"question": "¿Quién es el rey de los dioses en la mitología griega?",
+"response": "Zeus"
+}:
+{
+"question": "¿Cuál es el monstruo de las aguas que amenazaba a Andrómeda?",
+"response": "Ceto"
+},
+{
+"question": "¿Quién es el dios de los sueños y las profecías?",
+"response": "Morfeo"
+},
+]
