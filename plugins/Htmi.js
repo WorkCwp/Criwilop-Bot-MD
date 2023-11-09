@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from 'node-hitomi';
 const handler = async (m, {conn, text}) => {
   try {
     const res = await fetch('');
