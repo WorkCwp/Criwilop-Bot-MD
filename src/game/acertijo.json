@@ -167,5 +167,189 @@
 {
 "question": "¿Quién es el dios de los sueños y las profecías?",
 "response": "Morfeo"
-}
+},
+{
+        "question": "¿Quién es el dios del trueno en la mitología griega?",
+        "response": "Zeus"
+    },
+    {
+        "question": "¿Cuál es el océano más grande del mundo?",
+        "response": "El océano Pacífico"
+    },
+    {
+        "question": "¿En qué año comenzó la Primera Guerra Mundial?",
+        "response": "1914"
+    },
+    {
+        "question": "¿Cuál es el río más largo del mundo?",
+        "response": "El río Amazonas"
+    },
+    {
+        "question": "¿Quién escribió 'Romeo y Julieta'?",
+        "response": "William Shakespeare"
+    },
+    {
+        "question": "¿Cuál es el planeta más grande del sistema solar?",
+        "response": "Júpiter"
+    },
+    {
+        "question": "¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?",
+        "response": "1776"
+    },
+    {
+        "question": "¿Quién es la diosa griega de la sabiduría?",
+        "response": "Atenea"
+    },
+    {
+        "question": "¿Cuál es la capital de Francia?",
+        "response": "París"
+    },
+    {
+        "question": "¿Quién pintó la Mona Lisa?",
+        "response": "Leonardo da Vinci"
+    },
+    {
+        "question": "¿En qué año finalizó la Segunda Guerra Mundial?",
+        "response": "1945"
+    },
+    {
+        "question": "¿Cuál es el país más grande del mundo?",
+        "response": "Rusia"
+    },
+    {
+        "question": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+        "response": "Miguel de Cervantes"
+    },
+    {
+        "question": "¿Cuál es la capital de Japón?",
+        "response": "Tokio"
+    },
+    {
+        "question": "¿En qué continente se encuentra Egipto?",
+        "response": "África"
+    },
+    {
+        "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+        "response": "George Washington"
+    },
+    {
+        "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+        "response": "Aluminio"
+    },
+    {
+        "question": "¿Quién es el dios del sol en la mitología griega?",
+        "response": "Apolo"
+    },
+    {
+        "question": "¿Cuál es la moneda oficial de Japón?",
+        "response": "Yen"
+    },
+    {
+        "question": "¿En qué año llegó el hombre a la luna por primera vez?",
+        "response": "1969"
+    },
+    {
+        "question": "¿Quién fue el líder de la Revolución Cubana?",
+        "response": "Fidel Castro"
+    },
+    {
+        "question": "¿Cuál es el elemento químico más ligero?",
+        "response": "Hidrógeno"
+    },
+    {
+        "question": "¿Quién es la diosa del amor y la belleza en la mitología griega?",
+        "response": "Afrodita"
+    },
+    {
+        "question": "¿Cuál es el río que atraviesa la ciudad de Roma?",
+        "response": "Tíber"
+    },
+    {
+        "question": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
+        "response": "1945"
+    },
+    {
+        "question": "¿Cuál es la capital de Australia?",
+        "response": "Canberra"
+    },
+    {
+        "question": "¿Quién es conocido como el 'Rey del Pop'?",
+        "response": "Michael Jackson"
+    },
+    {
+        "question": "¿Cuál es el monte más alto del mundo?",
+        "response": "Monte Everest"
+    },
+    {
+        "question": "¿En qué continente se encuentra la Gran Muralla China?",
+        "response": "Asia"
+    },
+    {
+        "question": "¿Quién es el dios del mar en la mitología griega?",
+        "response": "Poseidón"
+    },
+    {
+        "question": "¿Cuál es el océano más pequeño del mundo?",
+        "response": "El océano Ártico"
+    },
+    {
+        "question": "¿En qué año se inauguró la Torre Eiffel en París?",
+        "response": "1889"
+    },
+    {
+        "question": "¿Cuál es la capital de Canadá?",
+        "response": "Ottawa"
+    },
+    {
+        "question": "¿Quién escribió 'Cien años de soledad'?",
+        "response": "Gabriel García Márquez"
+    },
+    {
+        "question": "¿Cuál es la diosa de la caza en la mitología griega?",
+        "response": "Artemisa"
+    },
+    {
+        "question": "¿En qué país se encuentra la ciudad de Petra?",
+        "response": "Jordania"
+    },
+    {
+        "question": "¿Quién fue el primer hombre en orbitar la Tierra?",
+        "response": "Yuri Gagarin"
+    },
+    {
+        "question": "¿Cuál es el metal conocido como 'oro rojo'?",
+        "response": "Cobre"
+    },
+    {
+        "question": "¿Quién es el dios del vino en la mitología griega?",
+        "response": "Dionisio"
+    },
+    {
+        "question": "¿En qué año se firmó la Declaración de los Derechos Humanos?",
+        "response": "1948"
+    },
+    {
+        "question": "¿Cuál es el río más largo de Europa?",
+        "response": "El río Volga"
+    },
+    {
+        "question": "¿Quién es el autor de '1984'?",
+        "response": "George Orwell"
+    },
+    {
+        "question": "¿Cuál es el planeta más cercano al sol?",
+        "response": "Mercurio"
+    },
+    {
+        "question": "¿En qué año se fundó la ciudad de Roma?",
+        "response": "753 a.C."
+    },
+    {
+        "question": "¿Quién es el dios de la guerra en la mitología griega?",
+        "response": "Ares"
+    },
+    {
+        "question": "¿Cuál es el desierto más grande del mundo?",
+        "response": "El desierto del Sáhara"
+    }
 ]
