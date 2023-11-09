@@ -1,5 +1,6 @@
 [
-{
+
+  {
 "question": "¿Quién es el dios del trueno en la mitología griega?",
 "response": "Zeus"
 },
@@ -166,5 +167,5 @@
 {
 "question": "¿Quién es el dios de los sueños y las profecías?",
 "response": "Morfeo"
-},
+}
 ]
