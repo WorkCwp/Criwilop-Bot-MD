@@ -498,17 +498,8 @@ const vi = ['https://telegra.ph/file/c25afc1685b13210ce602.mp4']
 
 try {
 await conn.sendMessage(m.chat, { video: { url: vi.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak }) 
-} catch (error) {
-try {
-await conn.sendMessage(m.chat, { image: { url: CwpMenu.getRandom() }, gifPlayback: false, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak }) 
-} catch (error) {
-try {
-await conn.sendMessage(m.chat, { image: CwpImg.getRandom(), gifPlayback: false, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak }) 
-} catch (error) {
-try{
-}}}
+} catch (error) 
 
-  }
 };
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i;
 handler.exp = 50;
