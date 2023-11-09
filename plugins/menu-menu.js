@@ -2,8 +2,15 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
+
+    const M = ['imagen1', 'imagen2', 'imagen3', 'imagen4', 'imagen5'];
+
+function ImagenRandom() {
+  const indiceRandom = Math.floor(Math.random() * M.length);
+  return M[indiceRandom];
+}
       m.react('🍰')
-   const pp = imagen3;
+   const pp = indiceRandom;
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
