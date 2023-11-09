@@ -70,7 +70,6 @@
     "mongoose": "^6.3.3",
     "node-fetch": "^3.2.0",
     "node-gtts": "^2.0.2",
-    "node-hitomi": "^7.0.6",
     "node-id3": "^0.2.6",
     "node-webpmux": "^3.1.1",
     "openai": "^3.3.0",
