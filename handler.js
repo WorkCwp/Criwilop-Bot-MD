@@ -1297,7 +1297,23 @@ const messageText = `
           __dirname: ___dirname,
           __filename,
         };
-        try {
+       try {
+  await plugin.call(this, m, extra);
+  if (!isPrems) {
+    m.limit = m.limit || plugin.limit || false;
+
+    if (m.limit && m.limit.length > 0) {
+    }
+  }
+} catch (e) {
+  m.error = e;
+  console.error(e);
+  if (e) {
+    let text = format(e);
+    for (const key of Object.values(global.APIKeys)) {
+      text = text.replace(new RegExp(key, 'g'), '#HIDDEN#');
+    }
+	      /*try {
           await plugin.call(this, m, extra);
           if (!isPrems) {
             m.limit = m.limit || plugin.limit || false;
@@ -1309,7 +1325,8 @@ const messageText = `
             let text = format(e);
             for (const key of Object.values(global.APIKeys)) {
               text = text.replace(new RegExp(key, 'g'), '#HIDDEN#');
-            }
+            }*/
+
             if (e.name) {
               /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
                 const data = (await conn.onWhatsApp(jid))[0] || {};
