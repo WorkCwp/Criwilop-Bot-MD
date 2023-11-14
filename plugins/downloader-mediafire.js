@@ -4,7 +4,7 @@ import fg from 'api-dylux'
 let free = 150 // limite de descarga
 let prem = 300 //si su servidor tienes menos de 2GB baja el límite
 let handler = async (m, { conn, args, text, usedPrefix, command, isOwner, isPrems }) => {
-	
+const rwait = 'error'	
    if (!args[0]) throw `✳️ Ingrese el link de mediafire junto al comando`
     if (!args[0].match(/mediafire/gi)) throw `❎ Link incorrecto`
     m.react(rwait)
