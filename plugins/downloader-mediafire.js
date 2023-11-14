@@ -1,19 +1,12 @@
 import axios from 'axios';
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-import { mediafiredl } from '@bochilteam/scraper';
+import {mediafiredl} from '@bochilteam/scraper';
 
-const handler = async (m, { conn, args, usedPrefix, command }) => {
+const handler = async (m, {conn, args, usedPrefix, command}) => {
   if (!args[0]) throw `*⚠️ 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝚅𝙰𝙻𝙸𝙳𝙾 𝙳𝙴 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝚁𝙴, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`;
-  
   try {
     const resEX = await mediafiredl(args[0]);
-    
-    // Verifica si el tamaño del archivo es mayor que 150MB
-    if (parseInt(resEX.filesizeH) > 150) {
-      throw '⚠️ El archivo no se puede enviar porque supera los límites (más de 150MB) ⚠️';
-    }
-
     const captionES = `
 *📓 𝙽𝙾𝙼𝙱𝚁𝙴:* ${resEX.filename}
 *📁 𝙿𝙴𝚂𝙾:* ${resEX.filesizeH}
@@ -21,39 +14,29 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
 *⏳ 𝙴𝚂𝙿𝙴𝚁𝙴 𝙴𝙽 𝙻𝙾 𝚀𝚄𝙴 𝙴𝙽𝚅𝙸𝙾 𝚂𝚄 𝙰𝚁𝙲𝙷𝙸𝚅𝙾. . . .* 
 `.trim();
-
     m.reply(captionES);
-    await conn.sendFile(m.chat, resEX.url, resEX.filename, '', m, null, { mimetype: resEX.ext, asDocument: true });
-
-  } catch (error) {
+    await conn.sendFile(m.chat, resEX.url, resEX.filename, '', m, null, {mimetype: resEX.ext, asDocument: true});
+  } catch {
     try {
       const res = await mediafireDl(args[0]);
-      
-      if (parseInt(res.size) > 150) {
-        throw '⚠️ El archivo no se puede enviar porque supera los límites (más de 150MB) ⚠️';
-      }
-
+      const {name, size, date, mime, link} = res;
       const caption = `
-*📓 𝙽𝙾𝙼𝙱𝚁𝙴:* ${res.name}
-*📁 𝙿𝙴𝚂𝙾:* ${res.size}
-*📄 𝚃𝙸𝙿𝙾:* ${res.mime}
+*📓 𝙽𝙾𝙼𝙱𝚁𝙴:* ${name}
+*📁 𝙿𝙴𝚂𝙾:* ${size}
+*📄 𝚃𝙸𝙿𝙾:* ${mime}
 
 *⏳ 𝙴𝚂𝙿𝙴𝚁𝙴 𝙴𝙽 𝙻𝙾 𝚀𝚄𝙴 𝙴𝙽𝚅𝙸𝙾 𝚂𝚄 𝙰𝚁𝙲𝙷𝙸𝚅𝙾. . . .* 
 `.trim();
-
       await m.reply(caption);
-      await conn.sendFile(m.chat, res.link, res.name, '', m, null, { mimetype: res.mime, asDocument: true });
-
+      await conn.sendFile(m.chat, link, name, '', m, null, {mimetype: mime, asDocument: true});
     } catch {
       await m.reply('*⚠️ 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n*- 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝚂𝙴𝙰 𝚂𝙸𝙼𝙸𝙻𝙰𝚁 𝙰:*\n*◉ https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*');
     }
   }
 };
-
 handler.help = ['mediafire'].map((v) => v + ' <url>');
 handler.tags = ['downloader'];
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i;
-
 export default handler;
 
 async function mediafireDl(url) {
@@ -66,5 +49,5 @@ async function mediafireDl(url) {
   let mime = '';
   const rese = await axios.head(link);
   mime = rese.headers['content-type'];
-  return { name, size, date, mime, link };
+  return {name, size, date, mime, link};
 }
