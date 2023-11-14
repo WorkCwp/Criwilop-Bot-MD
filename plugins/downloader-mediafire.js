@@ -27,7 +27,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   } catch (error) {
     // Handle errors
     console.error(error);
-    await m.reply('*⚠️ 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n*- 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝚂𝙴𝙰 𝚂𝙸𝙼𝙸𝙻𝙰𝚁 𝙰:*\n*◉ https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*');
+    await m.reply(`*⚠️El archivo supera los ${MAX_FILE_SIZE_MB}MB y no se puede enviar.*`);
   }
 };
 
