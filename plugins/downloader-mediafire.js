@@ -7,6 +7,11 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   if (!args[0]) throw `*⚠️ 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝚅𝙰𝙻𝙸𝙳𝙾 𝙳𝙴 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝚁𝙴, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`;
   try {
     const resEX = await mediafiredl(args[0]);
+    
+    if (parseInt(resEX.filesizeH) > 150) {
+      throw '⚠️ El archivo no se puede enviar porque supera los límites (más de 150MB) ⚠️';
+    }
+    
     const captionES = `
 *📓 𝙽𝙾𝙼𝙱𝚁𝙴:* ${resEX.filename}
 *📁 𝙿𝙴𝚂𝙾:* ${resEX.filesizeH}
