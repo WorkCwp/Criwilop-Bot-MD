@@ -21,7 +21,8 @@ const handler = async (m, {conn, args, participants}) => {
 ];
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
-*< TABLA DE LOS AVENTUREROS MÁS DESTACADOS />*
+*╭───────────⊱◈◈◈⊰────────┅┅┄┄*
+        *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦*
     
 —◉ *TOP ${len} EXP 🌟*
 *👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
@@ -38,12 +39,12 @@ ${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.som
 
 ${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *nivel ${level}*`).join`\n`}
 
-*⚔️ ${randomAdventurePhrase} ⚔️*`.trim();
+*⚔️ ${randomAdventurePhrase} ⚔️*
+*╰───────────⊱◈◈◈⊰────────┅┅┄┄*`.trim();
   conn.sendMessage(m.chat, {text: texto, mentions: conn.parseMention(texto)}, {quoted: m})
 };
 handler.help = ['top'];
 handler.tags = ['xp'];
-handler.private = true;
 handler.command = ['leaderboard', 'lb'];
 handler.fail = null;
 export default handler;
