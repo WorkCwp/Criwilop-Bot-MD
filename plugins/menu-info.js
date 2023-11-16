@@ -23,37 +23,40 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 *╭───── • ◆ • ─────┅┅┄┄*
-    *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
+   *ɪɴғᴏʀᴍᴀᴄɪᴏɴ ɢᴇɴᴇʀᴀʟ*
    
-▸📣 _${usedPrefix}grupos_
-▸📣 _${usedPrefix}estado_
-▸📣 _${usedPrefix}infobot_
-▸📣 _${usedPrefix}speedtest_
-▸📣 _${usedPrefix}owner_
-▸📣 _${usedPrefix}script_
-▸📣 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+  ▸📣 _${usedPrefix}grupos_
+  ▸📣 _${usedPrefix}estado_
+  ▸📣 _${usedPrefix}infobot_
+  ▸📣 _${usedPrefix}speedtest_
+  ▸📣 _${usedPrefix}owner_
+  ▸📣 _${usedPrefix}script_
+  ▸📣 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄**
- *< ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
+   *ʀᴇᴘᴏʀᴛᴀʀ ғᴀʟʟᴀs*
    
-▸🔰 _${usedPrefix}reporte *<texto>*_
+  ▸🔰 _${usedPrefix}reporte *<texto>*_
+
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
- *< 𝕊𝕆𝕃𝕌ℂ𝕀𝕆ℕ 𝔸 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
+  *ᴇʀʀᴏʀᴇs ᴇɴ ᴄʜᴀᴛs/ɢʀᴜᴘᴏs*
    
-➤ Mensajes en espera
-▸⭐ _${usedPrefix}fixmsgespera_
-➤ Mensajes en espera (owner)
-▸⭐ _${usedPrefix}dsowner_
+  ➤ Mensajes en espera
+  ▸⭐ _${usedPrefix}fixmsgespera_
+  ➤ Mensajes en espera (owner)
+  ▸⭐ _${usedPrefix}dsowner_
+
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
- *< 𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆 />*
+   *sᴏʟɪᴄɪᴛᴀʀ ᴇʟ ʙᴏᴛ *
   ◆━━━━━━━▣✦▣━━━━━━◆
-▸👾 _${usedPrefix}join *<enlace / link / url>*_
+  ▸👾 _${usedPrefix}join *<enlace / link / url>*_
 *╰───── • ◆ • ─────┅┅┄┄*
+*_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*
 `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
