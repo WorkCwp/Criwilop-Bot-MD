@@ -64,9 +64,9 @@ ${readMore}
   ∙ Jadibots ◃─────▹ menu5    
   ∙ Juegos ◃───────▹ menu6
   ∙ Menu-grupos ◃───▹ menu7
-  ∙ Convertidores ◃─▹ menu8
+  ∙ Convertidores ◃──▹ menu8
   ∙ Fraces ◃───────▹ menu9
-  ∙ Random ◃───────▹ menu10
+  ∙ Random ◃──────▹ menu10
   ∙ Herramientas ◃──▹ menu11
   ∙ Economía ◃─────▹ menu12
 *╰───── • ◆ • ─────┅┅┄┄*
