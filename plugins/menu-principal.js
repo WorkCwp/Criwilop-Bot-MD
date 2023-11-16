@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-      m.react('🍰')
+      m.react('🎄')
    const pp = imagen3;
     let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
@@ -24,19 +24,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
 *┏┄┄⟞ *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦* ⟝┄┄┓*
    
-▸*𝗛ola, ${taguser}*
+▸ *𝗛ola, ${taguser}*
    
-▸*Owner:* ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦
+▸ *Owner:* ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦
   *Numero:* wa.me/573244488043
 
-▸*Colab1:* *† 𝑀𝑐𝐹𝑙𝑦 †*
+▸ *Colab1:* † 𝑀𝑐𝐹𝑙𝑦 †
   *Numero:* wa.me/5492216804640
 
-▸*colab2:* *༒𝙑𝙄𝘾𝙏𝙊𝙍_𝘽𝙄𝙕𝙀𝙍𝘼𝙋༒*
+▸ *colab2:* ༒𝙑𝙄𝘾𝙏𝙊𝙍_𝘽𝙄𝙕𝙀𝙍𝘼𝙋༒
   *Numero:* wa.me/59897758548
 
-▸*PayPal:* https://www.paypal.me/3244488043
-*┄┄⟞ ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦ ⟝┄┄*
+▸ *PayPal:* https://www.paypal.me/3244488043
+*╰┄┄⟞ ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦ ⟝┄┄*
 ${readMore}
 *╭───── • ◆ • ─────┅┅┄┄*
   *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
