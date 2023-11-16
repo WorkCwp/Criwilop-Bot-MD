@@ -25,72 +25,72 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *╭───── • ◆ • ─────┅┅┄┄*
    * ᴄᴏɴᴠᴇʀᴛɪʀ ᴍᴜʟᴛɪᴍᴇᴅɪᴀ*
    
-▸🧧 _${usedPrefix}toanime *<imagen>*_
-▸🧧 _${usedPrefix}togifaud *<video>*_
-▸🧧 _${usedPrefix}toimg *<sticker>*_
-▸🧧 _${usedPrefix}tomp3 *<video>*_
-▸🧧 _${usedPrefix}tomp3 *<nota de voz>*_
-▸🧧 _${usedPrefix}toptt *<video / audio>*_
-▸🧧 _${usedPrefix}tovideo *<sticker>*_
-▸🧧 _${usedPrefix}tourl *<video / imagen / audio>*_
-▸🧧 _${usedPrefix}tts *<idioma> <texto>*_
-▸🧧 _${usedPrefix}tts *<efecto> <texto>*_
+  ▸🧧 _${usedPrefix}toanime *<imagen>*_
+  ▸🧧 _${usedPrefix}togifaud *<video>*_
+  ▸🧧 _${usedPrefix}toimg *<sticker>*_
+  ▸🧧 _${usedPrefix}tomp3 *<video>*_
+  ▸🧧 _${usedPrefix}tomp3 *<nota de voz>*_
+  ▸🧧 _${usedPrefix}toptt *<video / audio>*_
+  ▸🧧 _${usedPrefix}tovideo *<sticker>*_
+  ▸🧧 _${usedPrefix}tourl *<video / imagen / audio>*_
+  ▸🧧 _${usedPrefix}tts *<idioma> <texto>*_
+  ▸🧧 _${usedPrefix}tts *<efecto> <texto>*_
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
        *ᴇғᴇᴄᴛᴏs*
    
-▸🖍️ _${usedPrefix}logos *<efecto> <texto>*_
+  ▸🖍️ _${usedPrefix}logos *<efecto> <texto>*_
 
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
    *ᴍᴏᴅɪғɪᴄᴀᴄɪᴏɴ ᴅᴇ ᴀᴜᴅɪᴏs*
    
-*- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
-▸🎤 _${usedPrefix}bass_
-▸🎤 _${usedPrefix}blown_
-▸🎤 _${usedPrefix}deep_
-▸🎤 _${usedPrefix}earrape_
-▸🎤 _${usedPrefix}fast_
-▸🎤 _${usedPrefix}fat_
-▸🎤 _${usedPrefix}nightcore_
-▸🎤 _${usedPrefix}reverse_
-▸🎤 _${usedPrefix}robot_
-▸🎤 _${usedPrefix}slow_
-▸🎤 _${usedPrefix}smooth_
-▸🎤 _${usedPrefix}tupai_
+  *- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
+  ▸🎤 _${usedPrefix}bass_
+  ▸🎤 _${usedPrefix}blown_
+  ▸🎤 _${usedPrefix}deep_
+  ▸🎤 _${usedPrefix}earrape_
+  ▸🎤 _${usedPrefix}fast_
+  ▸🎤 _${usedPrefix}fat_
+  ▸🎤 _${usedPrefix}nightcore_
+  ▸🎤 _${usedPrefix}reverse_
+  ▸🎤 _${usedPrefix}robot_
+  ▸🎤 _${usedPrefix}slow_
+  ▸🎤 _${usedPrefix}smooth_
+  ▸🎤 _${usedPrefix}tupai_
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
   *ᴄʀᴇᴀᴄɪᴏɴ ᴅᴇ sᴛɪᴄᴋᴇʀs*
    
-▸🃏 _${usedPrefix}sticker *<responder a imagen o video>*_
-▸🃏 _${usedPrefix}sticker *<enlace / link / url>*_
-▸🃏 _${usedPrefix}sticker2 *<responder a imagen o video>*_
-▸🃏 _${usedPrefix}sticker2 *<enlace / link / url>*_
-▸🃏 _${usedPrefix}s *<responder a imagen o video>*_
-▸🃏 _${usedPrefix}s *<enlace / link / url>*_
-▸🃏 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
-▸🃏 _${usedPrefix}scircle *<imagen>*_
-▸🃏 _${usedPrefix}sremovebg *<imagen>*_
-▸🃏 _${usedPrefix}semoji *<tipo> <emoji>*_
-▸🃏 _${usedPrefix}qc *<texto>*_
-▸🃏 _${usedPrefix}attp *<texto>*_
-▸🃏 _${usedPrefix}attp2 *<texto>*_
-▸🃏 _${usedPrefix}attp3 *<texto>*_
-▸🃏 _${usedPrefix}ttp *<texto>*_
-▸🃏 _${usedPrefix}ttp2 *<texto>*_
-▸🃏 _${usedPrefix}ttp3 *<texto>*_
-▸🃏 _${usedPrefix}ttp4 *<texto>*_
-▸🃏 _${usedPrefix}ttp5 *<texto>*_
-▸🃏 _${usedPrefix}pat *<@tag>*_
-▸🃏 _${usedPrefix}slap *<@tag>*_
-▸🃏 _${usedPrefix}kiss *<@tag>*_
-▸🃏 _${usedPrefix}dado_
-▸🃏 _${usedPrefix}wm *<packname> <author>*_
-▸🃏 _${usedPrefix}stickermarker *<efecto> <imagen>*_
-▸🃏 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
+  ▸🃏 _${usedPrefix}sticker *<responder a imagen o video>*_
+  ▸🃏 _${usedPrefix}sticker *<enlace / link / url>*_
+  ▸🃏 _${usedPrefix}sticker2 *<responder a imagen o video>*_
+  ▸🃏 _${usedPrefix}sticker2 *<enlace / link / url>*_
+  ▸🃏 _${usedPrefix}s *<responder a imagen o video>*_
+  ▸🃏 _${usedPrefix}s *<enlace / link / url>*_
+  ▸🃏 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
+  ▸🃏 _${usedPrefix}scircle *<imagen>*_
+  ▸🃏 _${usedPrefix}sremovebg *<imagen>*_
+  ▸🃏 _${usedPrefix}semoji *<tipo> <emoji>*_
+  ▸🃏 _${usedPrefix}qc *<texto>*_
+  ▸🃏 _${usedPrefix}attp *<texto>*_
+  ▸🃏 _${usedPrefix}attp2 *<texto>*_
+  ▸🃏 _${usedPrefix}attp3 *<texto>*_
+  ▸🃏 _${usedPrefix}ttp *<texto>*_
+  ▸🃏 _${usedPrefix}ttp2 *<texto>*_
+  ▸🃏 _${usedPrefix}ttp3 *<texto>*_
+  ▸🃏 _${usedPrefix}ttp4 *<texto>*_
+  ▸🃏 _${usedPrefix}ttp5 *<texto>*_
+  ▸🃏 _${usedPrefix}pat *<@tag>*_
+  ▸🃏 _${usedPrefix}slap *<@tag>*_
+  ▸🃏 _${usedPrefix}kiss *<@tag>*_
+  ▸🃏 _${usedPrefix}dado_
+  ▸🃏 _${usedPrefix}wm *<packname> <author>*_
+  ▸🃏 _${usedPrefix}stickermarker *<efecto> <imagen>*_
+  ▸🃏 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 *╰───── • ◆ • ─────┅┅┄┄*
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*
 `.trim();
