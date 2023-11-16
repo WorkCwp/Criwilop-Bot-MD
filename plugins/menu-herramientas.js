@@ -25,33 +25,33 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *╭───── • ◆ • ─────┅┅┄┄*
    *ʜᴇʀʀᴀᴍɪᴇɴᴛᴀs ᴠᴀʀɪᴀs*
    
-▸🛠️ _${usedPrefix}inspect *<link wa_gc>*_
-▸🛠️ _${usedPrefix}chatgpt *<texto>*_
-▸🛠️ _${usedPrefix}delchatgpt
-▸🛠️ _${usedPrefix}gptvoz *<texto>*_
-▸🛠️ _${usedPrefix}dall-e *<texto>*_
-▸🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-▸🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
-▸🛠️ _${usedPrefix}readviewonce *<imagen / video>*_
-▸🛠️ _${usedPrefix}clima *<país> <ciudad>*_
-▸🛠️ _${usedPrefix}encuesta *<texto1|texto2...>*_
-▸🛠️ _${usedPrefix}afk *<motivo>*_
-▸🛠️ _${usedPrefix}ocr *<responde a imagen>*_
-▸🛠️ _${usedPrefix}hd *<responde a imagen>*_
-▸🛠️ _${usedPrefix}acortar *<enlace / link / url>*_
-▸🛠️ _${usedPrefix}calc *<operacion math>*_
-▸🛠️ _${usedPrefix}del *<mensaje>*_
-▸🛠️ _${usedPrefix}whatmusic *<audio>*_
-▸🛠️ _${usedPrefix}readqr *<imagen (QR)>*_
-▸🛠️ _${usedPrefix}qrcode *<texto>*_
-▸🛠️ _${usedPrefix}readmore *<texto1| texto2>*_
-▸🛠️ _${usedPrefix}styletext *<texto>*_
-▸🛠️ _${usedPrefix}traducir *<texto>*_
-▸🛠️ _${usedPrefix}nowa *<numero>*_
-▸🛠️ _${usedPrefix}covid *<pais>*_
-▸🛠️ _${usedPrefix}horario_
-▸🛠️ _${usedPrefix}dropmail_
-*╰───── • ◆ • ─────┅┅┄┄*
+  ▸🛠️ _${usedPrefix}inspect *<link wa_gc>*_
+  ▸🛠️ _${usedPrefix}chatgpt *<texto>*_
+  ▸🛠️ _${usedPrefix}delchatgpt
+  ▸🛠️ _${usedPrefix}gptvoz *<texto>*_
+  ▸🛠️ _${usedPrefix}dall-e *<texto>*_
+  ▸🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
+  ▸🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
+  ▸🛠️ _${usedPrefix}readviewonce *<imagen / video>*_
+  ▸🛠️ _${usedPrefix}clima *<país> <ciudad>*_
+  ▸🛠️ _${usedPrefix}encuesta *<texto1|texto2...>*_
+  ▸🛠️ _${usedPrefix}afk *<motivo>*_
+  ▸🛠️ _${usedPrefix}ocr *<responde a imagen>*_
+  ▸🛠️ _${usedPrefix}hd *<responde a imagen>*_
+  ▸🛠️ _${usedPrefix}acortar *<enlace / link / url>*_
+  ▸🛠️ _${usedPrefix}calc *<operacion math>*_
+  ▸🛠️ _${usedPrefix}del *<mensaje>*_
+  ▸🛠️ _${usedPrefix}whatmusic *<audio>*_
+  ▸🛠️ _${usedPrefix}readqr *<imagen (QR)>*_
+  ▸🛠️ _${usedPrefix}qrcode *<texto>*_
+  ▸🛠️ _${usedPrefix}readmore *<texto1| texto2>*_
+  ▸🛠️ _${usedPrefix}styletext *<texto>*_
+  ▸🛠️ _${usedPrefix}traducir *<texto>*_
+  ▸🛠️ _${usedPrefix}nowa *<numero>*_
+  ▸🛠️ _${usedPrefix}covid *<pais>*_
+  ▸🛠️ _${usedPrefix}horario_
+  ▸🛠️ _${usedPrefix}dropmail_*
+╰───── • ◆ • ─────┅┅┄┄*
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
