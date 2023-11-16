@@ -20,15 +20,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 *╭───── • ◆ • ─────┅┅┄┄*
-      *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦*
-  ⊱⋅ ─────────────── ⋅⊰
-  *𝗛ola, ${taguser}*
-
-*╰───── • ◆ • ─────┅┅┄┄*
-
-*╭───── • ◆ • ─────┅┅┄┄*
      *ᴍᴇɴᴜ ᴏᴛᴀᴋᴜ*
- *╰───── • ◆ • ─────┅┅┄┄* 
+*╰───── • ◆ • ─────┅┅┄┄* 
  
  🔸 _${usedPrefix}lolivid_
  🔸 _${usedPrefix}loli_
@@ -70,7 +63,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  🔸 _${usedPrefix}sasuke_
  🔸 _${usedPrefix}sakura_
  🔸 _${usedPrefix}cosplay_
-*╰───── • ◆ • ─────┅┅┄┄*`.trim();
+*╰───── • ◆ • ─────┅┅┄┄*
+ *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
