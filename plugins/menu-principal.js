@@ -21,7 +21,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-*╭───── • ◆ • ─────┅┅┄┄*
+*╭───── • ◆ • ────────┅┅┄┄*
    
 ▸ *𝗛ola, ${taguser}*
    
@@ -35,7 +35,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   *Numero:* wa.me/59897758548
 
 ▸ *PayPal:* https://www.paypal.me/3244488043
-*╰┄┄⟞ ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦ ⟝┄┄*
+*╰┄┄⟞ ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦ ───┄┄*
 ${readMore}
 *╭───── • ◆ • ─────┅┅┄┄*
      *ɪɴғᴏ ᴜsᴜᴀʀɪᴏ*
@@ -48,6 +48,7 @@ ${readMore}
      *ᴇsᴛᴀᴅᴏ ᴅᴇʟ ʙᴏᴛ *
    
  ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
@@ -55,9 +56,9 @@ ${readMore}
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
-  ∙ Información   = menu1
-  ∙ Audios        = menu2
-  ∙ Descargas     = menu3
+  ∙ Información     = menu1
+  ∙ Audios           = menu2
+  ∙ Descargas        = menu3
   ∙ Busquedas     = menu4
   ∙ Jadibots      = menu5    
   ∙ Juegos        = menu6
