@@ -41,6 +41,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
    
 ▸🖍️ _${usedPrefix}logos *<efecto> <texto>*_
+
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ────╮*
@@ -91,6 +92,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▸🃏 _${usedPrefix}stickermarker *<efecto> <imagen>*_
 ▸🃏 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 *╰───── • ◆ • ─────┅┅┄┄*
+*_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*
 `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
