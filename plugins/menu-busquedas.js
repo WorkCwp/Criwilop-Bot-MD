@@ -22,20 +22,20 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-    *╭───── • ◆ • ─────┅┅┄┄*
- *< 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+*╭───── • ◆ • ─────┅┅┄┄*
+      *ʙᴜsǫᴜᴇᴅᴀs*
  
-▸🔍 _${usedPrefix}githubsearch *<texto>*_
-▸🔍 _${usedPrefix}pelisplus *<texto>*_
-▸🔍 _${usedPrefix}modapk *<texto>*_
-▸🔍 _${usedPrefix}stickersearch *<texto>*_
-▸🔍 _${usedPrefix}stickersearch2 *<texto>*_
-▸🔍 _${usedPrefix}animeinfo *<texto>*_
-▸🔍 _${usedPrefix}google *<texto>*_
-▸🔍 _${usedPrefix}letra *<texto>*_
-▸🔍 _${usedPrefix}wikipedia *<texto>*_
-▸🔍 _${usedPrefix}ytsearch *<texto>*_
-▸🔍 _${usedPrefix}playstore *<texto>*_
+  ▸🔍 _${usedPrefix}githubsearch *<texto>*_
+  ▸🔍 _${usedPrefix}pelisplus *<texto>*_
+  ▸🔍 _${usedPrefix}modapk *<texto>*_
+  ▸🔍 _${usedPrefix}stickersearch *<texto>*_
+  ▸🔍 _${usedPrefix}stickersearch2 *<texto>*_
+  ▸🔍 _${usedPrefix}animeinfo *<texto>*_
+  ▸🔍 _${usedPrefix}google *<texto>*_
+  ▸🔍 _${usedPrefix}letra *<texto>*_
+  ▸🔍 _${usedPrefix}wikipedia *<texto>*_
+  ▸🔍 _${usedPrefix}ytsearch *<texto>*_
+  ▸🔍 _${usedPrefix}playstore *<texto>*_
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
