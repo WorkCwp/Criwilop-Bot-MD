@@ -56,18 +56,18 @@ ${readMore}
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
-  ∙ Información     = menu1
-  ∙ Audios           = menu2
-  ∙ Descargas        = menu3
-  ∙ Busquedas     = menu4
-  ∙ Jadibots      = menu5    
-  ∙ Juegos        = menu6
-  ∙ Menu-grupos   = menu7
-  ∙ Convertidores = menu8
-  ∙ Fraces        = menu9
-  ∙ Random        = menu10
-  ∙ Herramientas  = menu11
-  ∙ Economía      = menu12
+  ∙ Información    = menu1
+  ∙ Audios         = menu2
+  ∙ Descargas      = menu3
+  ∙ Busquedas      = menu4
+  ∙ Jadibots       = menu5    
+  ∙ Juegos         = menu6
+  ∙ Menu-grupos    = menu7
+  ∙ Convertidores  = menu8
+  ∙ Fraces         = menu9
+  ∙ Random         = menu10
+  ∙ Herramientas   = menu11
+  ∙ Economía       = menu12
 *╰───── • ◆ • ─────┅┅┄┄*
 
 
