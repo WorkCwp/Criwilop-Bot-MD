@@ -25,10 +25,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *╭───── • ◆ • ─────┅┅┄┄*
      *ғʀᴀᴄᴇs/ᴛᴇxᴛᴏs*
    
-▸🥀 _${usedPrefix}piropo_
-▸🥀 _${usedPrefix}consejo_
-▸🥀 _${usedPrefix}fraseromantica_
-▸🥀 _${usedPrefix}historiaromantica_
+  ▸🥀 _${usedPrefix}piropo_
+  ▸🥀 _${usedPrefix}consejo_
+  ▸🥀 _${usedPrefix}fraseromantica_
+  ▸🥀 _${usedPrefix}historiaromantica_
 *╰───── • ◆ • ─────┅┅┄┄*
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
