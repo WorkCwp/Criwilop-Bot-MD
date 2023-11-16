@@ -25,35 +25,35 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *╭───── • ◆ • ─────┅┅┄┄*
    *ғᴜɴᴄɪᴏɴᴇs ᴇɴ ɢʀᴜᴘᴏs* 
    
-▸🍁 _${usedPrefix}add *<numero>*_
-▸🍁 _${usedPrefix}kick *<@tag>*_
-▸🍁 _${usedPrefix}kick2 *<@tag>*_
-▸🍁 _${usedPrefix}listanum *<texto>*_
-▸🍁 _${usedPrefix}kicknum *<texto>*_
-▸🍁 _${usedPrefix}grupo *<abrir / cerrar>*_
-▸🍁 _${usedPrefix}grouptime *<opcion> <tiempo>*_
-▸🍁 _${usedPrefix}promote *<@tag>*_
-▸🍁 _${usedPrefix}demote *<@tag>*_
-▸🍁 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-▸🍁 _${usedPrefix}demote *<@tag>*_
-▸🍁 _${usedPrefix}infogroup_
-▸🍁 _${usedPrefix}resetlink_
-▸🍁 _${usedPrefix}link_
-▸🍁 _${usedPrefix}setname *<texto>*_
-▸🍁 _${usedPrefix}setdesc *<texto>*_
-▸🍁 _${usedPrefix}invocar *<texto>*_
-▸🍁 _${usedPrefix}setwelcome *<texto>*_
-▸🍁 _${usedPrefix}setbye *<texto>*_
-▸🍁 _${usedPrefix}hidetag *<texto>*_
-▸🍁 _${usedPrefix}hidetag *<audio>*_
-▸🍁 _${usedPrefix}hidetag *<video>*_
-▸🍁 _${usedPrefix}hidetag *<imagen>*_
-▸🍁 _${usedPrefix}warn *<@tag>*_
-▸🍁 _${usedPrefix}unwarn *<@tag>*_
-▸🍁 _${usedPrefix}listwarn_
-▸🍁 _${usedPrefix}fantasmas_
-▸🍁 _${usedPrefix}destraba_
-▸🍁 _${usedPrefix}setpp *<imagen>*_
+  ▸🍁 _${usedPrefix}add *<numero>*_
+  ▸🍁 _${usedPrefix}kick *<@tag>*_
+  ▸🍁 _${usedPrefix}kick2 *<@tag>*_
+  ▸🍁 _${usedPrefix}listanum *<texto>*_
+  ▸🍁 _${usedPrefix}kicknum *<texto>*_
+  ▸🍁 _${usedPrefix}grupo *<abrir / cerrar>*_
+  ▸🍁 _${usedPrefix}grouptime *<opcion> <tiempo>*_
+  ▸🍁 _${usedPrefix}promote *<@tag>*_
+  ▸🍁 _${usedPrefix}demote *<@tag>*_
+  ▸🍁 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+  ▸🍁 _${usedPrefix}demote *<@tag>*_
+  ▸🍁 _${usedPrefix}infogroup_
+  ▸🍁 _${usedPrefix}resetlink_
+  ▸🍁 _${usedPrefix}link_
+  ▸🍁 _${usedPrefix}setname *<texto>*_
+  ▸🍁 _${usedPrefix}setdesc *<texto>*_
+  ▸🍁 _${usedPrefix}invocar *<texto>*_
+  ▸🍁 _${usedPrefix}setwelcome *<texto>*_
+  ▸🍁 _${usedPrefix}setbye *<texto>*_
+  ▸🍁 _${usedPrefix}hidetag *<texto>*_
+  ▸🍁 _${usedPrefix}hidetag *<audio>*_
+  ▸🍁 _${usedPrefix}hidetag *<video>*_
+  ▸🍁 _${usedPrefix}hidetag *<imagen>*_
+  ▸🍁 _${usedPrefix}warn *<@tag>*_
+  ▸🍁 _${usedPrefix}unwarn *<@tag>*_
+  ▸🍁 _${usedPrefix}listwarn_
+  ▸🍁 _${usedPrefix}fantasmas_
+  ▸🍁 _${usedPrefix}destraba_
+  ▸🍁 _${usedPrefix}setpp *<imagen>*_
 *╰───── • ◆ • ─────┅┅┄┄*
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
