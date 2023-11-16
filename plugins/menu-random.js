@@ -22,48 +22,46 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-*┏┄┄⟞ *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦* ⟝┄┄┓*
-   
 *╭───── • ◆ • ─────┅┅┄┄*
- *< ℝ𝔸ℕ𝔻𝕆𝕄 />*
+        *ʀᴀɴᴅᴏᴍ*
    
-▸👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
-▸👾 _${usedPrefix}cristianoronaldo_
-▸👾 _${usedPrefix}messi_
-▸👾 _${usedPrefix}cat_
-▸👾 _${usedPrefix}dog_
-▸👾 _${usedPrefix}meme_
-▸👾 _${usedPrefix}itzy_
-▸👾 _${usedPrefix}blackpink_
-▸👾 _${usedPrefix}navidad_
-▸👾 _${usedPrefix}wpmontaña_
-▸👾 _${usedPrefix}pubg_
-▸👾 _${usedPrefix}wpgaming_
-▸👾 _${usedPrefix}wpaesthetic_
-▸👾 _${usedPrefix}wpaesthetic2_
-▸👾 _${usedPrefix}wprandom_
-▸👾 _${usedPrefix}wallhp_
-▸👾 _${usedPrefix}wpvehiculo_
-▸👾 _${usedPrefix}wpmoto_
-▸👾 _${usedPrefix}coffee_
-▸👾 _${usedPrefix}pentol_
-▸👾 _${usedPrefix}caricatura_
-▸👾 _${usedPrefix}ciberespacio_
-▸👾 _${usedPrefix}technology_
-▸👾 _${usedPrefix}doraemon_
-▸👾 _${usedPrefix}hacker_
-▸👾 _${usedPrefix}planeta_
-▸👾 _${usedPrefix}randomprofile_
+  ▸👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
+  ▸👾 _${usedPrefix}cristianoronaldo_
+  ▸👾 _${usedPrefix}messi_
+  ▸👾 _${usedPrefix}cat_
+  ▸👾 _${usedPrefix}dog_
+  ▸👾 _${usedPrefix}meme_
+  ▸👾 _${usedPrefix}itzy_
+  ▸👾 _${usedPrefix}blackpink_
+  ▸👾 _${usedPrefix}navidad_
+  ▸👾 _${usedPrefix}wpmontaña_
+  ▸👾 _${usedPrefix}pubg_
+  ▸👾 _${usedPrefix}wpgaming_
+  ▸👾 _${usedPrefix}wpaesthetic_
+  ▸👾 _${usedPrefix}wpaesthetic2_
+  ▸👾 _${usedPrefix}wprandom_
+  ▸👾 _${usedPrefix}wallhp_
+  ▸👾 _${usedPrefix}wpvehiculo_
+  ▸👾 _${usedPrefix}wpmoto_
+  ▸👾 _${usedPrefix}coffee_
+  ▸👾 _${usedPrefix}pentol_
+  ▸👾 _${usedPrefix}caricatura_
+  ▸👾 _${usedPrefix}ciberespacio_
+  ▸👾 _${usedPrefix}technology_
+  ▸👾 _${usedPrefix}doraemon_
+  ▸👾 _${usedPrefix}hacker_
+  ▸👾 _${usedPrefix}planeta_
+  ▸👾 _${usedPrefix}randomprofile_
 *╰───── • ◆ • ─────┅┅┄┄*
 
 *╭───── • ◆ • ─────┅┅┄┄*
- *< ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆 />*
+     *ᴄʜᴀᴛ ᴀɴᴏɴɪᴍᴏ*
    
-▸📳 _${usedPrefix}start_
-▸📳 _${usedPrefix}next_
-▸📳 _${usedPrefix}leave_
+  ▸📳 _${usedPrefix}start_
+  ▸📳 _${usedPrefix}next_
+  ▸📳 _${usedPrefix}leave_
 *╰───── • ◆ • ─────┅┅┄┄*
-`.trim();
+*_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
