@@ -23,7 +23,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 *╭───── • ◆ • ─────┅┅┄┄*
- *< ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸 />*
+     *ʀᴘɢ/ᴇᴄᴏɴᴏᴍɪᴀ*
    
 ▸💵 _${usedPrefix}adventure_
 ▸💵 _${usedPrefix}cazar_
@@ -45,6 +45,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▸💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
 ▸💵 _${usedPrefix}unreg *<numero de serie>*_
 *╰───── • ◆ • ─────┅┅┄┄*
+*_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*
 `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
