@@ -25,25 +25,25 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 *╭───── • ◆ • ─────┅┅┄┄*
      *ʀᴘɢ/ᴇᴄᴏɴᴏᴍɪᴀ*
    
-▸💵 _${usedPrefix}adventure_
-▸💵 _${usedPrefix}cazar_
-▸💵 _${usedPrefix}cofre_
-▸💵 _${usedPrefix}balance_
-▸💵 _${usedPrefix}claim_
-▸💵 _${usedPrefix}heal_
-▸💵 _${usedPrefix}lb_
-▸💵 _${usedPrefix}levelup_
-▸💵 _${usedPrefix}myns_
-▸💵 _${usedPrefix}perfil_
-▸💵 _${usedPrefix}work_
-▸💵 _${usedPrefix}minar_
-▸💵 _${usedPrefix}minar2_
-▸💵 _${usedPrefix}buy_
-▸💵 _${usedPrefix}buyall_
-▸💵 _${usedPrefix}verificar_
-▸💵 _${usedPrefix}robar *<cantidad> <@tag>*_
-▸💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
-▸💵 _${usedPrefix}unreg *<numero de serie>*_
+  ▸💵 _${usedPrefix}adventure_
+  ▸💵 _${usedPrefix}cazar_
+  ▸💵 _${usedPrefix}cofre_
+  ▸💵 _${usedPrefix}balance_
+  ▸💵 _${usedPrefix}claim_
+  ▸💵 _${usedPrefix}heal_
+  ▸💵 _${usedPrefix}lb_
+  ▸💵 _${usedPrefix}levelup_
+  ▸💵 _${usedPrefix}myns_
+  ▸💵 _${usedPrefix}perfil_
+  ▸💵 _${usedPrefix}work_
+  ▸💵 _${usedPrefix}minar_
+  ▸💵 _${usedPrefix}minar2_
+  ▸💵 _${usedPrefix}buy_
+  ▸💵 _${usedPrefix}buyall_
+  ▸💵 _${usedPrefix}verificar_
+  ▸💵 _${usedPrefix}robar *<cantidad> <@tag>*_
+  ▸💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
+  ▸💵 _${usedPrefix}unreg *<numero de serie>*_
 *╰───── • ◆ • ─────┅┅┄┄*
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*
 `.trim();
