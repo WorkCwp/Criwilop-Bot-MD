@@ -23,7 +23,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 *╭───── • ◆ • ─────┅┅┄┄*
-      *ᴊᴜᴇɢᴏs *
+      *ᴊᴜᴇɢᴏs*
              
   ▸🎮 _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
   ▸🎮 _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
