@@ -140,8 +140,6 @@ handler.help = ['play', 'play2']
 handler.tags = ['descargas']
 handler.command = /^play2?$/i
 
-handler.register = true
-
 export default handler
 
 async function search(query, options = {}) {
