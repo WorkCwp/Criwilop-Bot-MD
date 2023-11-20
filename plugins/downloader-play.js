@@ -7,7 +7,7 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 var handler = async (m, { conn, command, args, text, usedPrefix }) => {
 
 if (!text) throw `*⚠️ Nombre del audio/video faltante.*\n\n❕ EJEMPLO\n*${usedPrefix + command}* kevin kaarl`
-m.react(done)
+m.react('☑️')
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
