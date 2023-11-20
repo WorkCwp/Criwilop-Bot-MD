@@ -82,7 +82,7 @@ ${data.resultado.url}`;
     throw `*⚠️ Error: ${error.message || 'Ocurrió un error inesperado'}.*`;
   }
 };
-handler.help = ['playX', 'play2X'].map((v) => v + ' <texto>');
+handler.help = ['play', 'play2'].map((v) => v + ' <texto>');
 handler.tags = ['downloader'];
-handler.command = ['play', 'play2'];
+handler.command = ['playX', 'play2X'];
 export default handler;
