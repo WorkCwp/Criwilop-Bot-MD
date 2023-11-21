@@ -10,6 +10,6 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 
 handler.help = [''];
 handler.tags = [''];
-handler.command = /^(sticker2|Sticker2|Sticker 2|sticker 2)$/i;
+handler.command = /^(sticker2|Sticker2)$/i;
 
 export default handler;
