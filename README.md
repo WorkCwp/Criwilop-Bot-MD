@@ -26,6 +26,9 @@
 <div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
 <a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 
+## `COLABORADORES` 
+<a href="https://github.com/Victorrr19"><img src="https://github.com/Victorrr19.png" width="250" height="250" alt="Victorrr19"/></a>
+
 ## `EDITOR & PROPIETARIO DEL BOT` 
 <a href="https://github.com/WorkCwp"><img src="Menu.png" width="250" height="250" alt="<WorkCwp\>"/></a>
   
