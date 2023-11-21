@@ -27,6 +27,6 @@
 <a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 
 ## `EDITOR & PROPIETARIO DEL BOT` 
-<a href="https://github.com/WorkCwp"><img src="Menu.png" width="250" height="250" alt="BrunoSobrino"/></a>
+<a href="https://github.com/WorkCwp"><img src="Menu.png" width="250" height="250" alt="<WorkCwp\>"/></a>
   
 `♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦`
