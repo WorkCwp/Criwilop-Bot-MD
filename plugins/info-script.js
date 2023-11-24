@@ -1,10 +1,10 @@
 import moment from 'moment-timezone';
 import fetch from 'node-fetch';
 const handler = async (m, { conn, args }) => {
-   const res = await fetch('https://api.github.com/repos/BrunoSobrino/TheMystic-Bot-MD');
+   const res = await fetch('https://api.github.com/repos/WorkCwp/Criwilop-Bot-MD');
    const json = await res.json();
-   let txt = `           *シ  B O T  -  S C R I P T  シ*\n\n`;
-      txt += `◦  *Nombre:* ${json?.name || 'TheMystic-Bot-MD'}\n`;
+   let txt = `           *🍁  S C R I P T  🍁*\n\n`;
+      txt += `◦  *Nombre:* ${json?.name || '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦'}\n`;
       txt += `◦  *Visitantes:* ${json?.watchers_count || '-'}\n`;
       txt += `◦  *Tamaño:* ${(json?.size / 1024).toFixed(2) || '-'} MB\n`;
       txt += `◦  *Actualización:* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n`;
