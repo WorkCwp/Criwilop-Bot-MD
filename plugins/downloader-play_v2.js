@@ -84,5 +84,5 @@ ${data.resultado.url}`;
 };
 handler.help = ['play', 'play2'].map((v) => v + ' <texto>');
 handler.tags = ['downloader'];
-handler.command = ['playX', 'play2X'];
+handler.command = ['play', 'play2'];
 export default handler;
