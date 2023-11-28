@@ -26,13 +26,12 @@ global.titulowm2 = `♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫�
 global.igfg = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦';
 global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 
-global.imagenX = fs.readFileSync('./MenuX.gif');
-global.imagen1 = fs.readFileSync('./Menu2.jpg');
+global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
-global.imagen4 = fs.readFileSync('./Menu.png');
+global.imagen4 = fs.readFileSync('./media/img/Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
-global.imagen6 = fs.readFileSync('./Menu3.png');
+global.imagen6 = fs.readFileSync('./media/img/Menu3.png');
 
 global.mods = [];
 
