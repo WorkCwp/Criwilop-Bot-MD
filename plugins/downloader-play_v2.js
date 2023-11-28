@@ -6,7 +6,7 @@ let fileName;
 let apiUrl;
 let enviando = false;
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:*\n*${usedPrefix + command}* Kevin kaarl colapso\n*—◉ Ejemplo 2:*\n*${usedPrefix + command}*`;
+  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:\n *${usedPrefix + command} *Kevin kaarl colapso*`;
 if (enviando) return;
     enviando = true
   try {
@@ -82,7 +82,5 @@ ${data.resultado.url}`;
     throw `*⚠️ Error: ${error.message || 'Ocurrió un error inesperado'}.*`;
   }
 };
-handler.help = ['play', 'play2'].map((v) => v + ' <texto>');
-handler.tags = ['downloader'];
 handler.command = ['play', 'play2'];
 export default handler;
