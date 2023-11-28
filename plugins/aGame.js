@@ -1,7 +1,7 @@
 // Importar las dependencias necesarias
-import { Client } = from ('@whiskeysockets/baileys');
-import { Message } = from ('@adiwajshing/keyed-db');
-import { generateGame } = from ('@green-code/music-track-data');
+import { Client } from ('@whiskeysockets/baileys');
+import { Message } from ('@adiwajshing/keyed-db');
+import { generateGame } from ('@green-code/music-track-data');
 
 // Crear un cliente de WhatsApp
 const client = new Client();
