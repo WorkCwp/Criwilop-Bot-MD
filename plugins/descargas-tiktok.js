@@ -14,6 +14,6 @@ const handler = async (m, {conn, text}) => {
 };
 handler.help = ['tt'];
 handler.tags = ['tiktok'];
-handler.command = /^\tt/i;
+handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm|tt|ttnowm|tiktokaudio)$/i;
 handler.fail = null;
 export default handler;
