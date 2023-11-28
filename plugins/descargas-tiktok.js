@@ -9,7 +9,7 @@ const handler = async (m, {conn, text}) => {
     await conn.sendFile(m.chat, videoUrl, 'video.mp4', 'Aquí está el video de TikTok que solicitaste');
 
   } catch {
-    throw '*¡Error!* No se pudo descargar el video de TikTok';
+    throw '*¡Error!* se está trabajando en esta función, *no disponible temporalmente*';
   }
 };
 handler.help = ['tt'];
