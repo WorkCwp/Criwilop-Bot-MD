@@ -27,8 +27,6 @@ global.igfg = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦
 global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 
 global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./media/img/Menu.png');
 global.imagen6 = fs.readFileSync('./media/img/Menu3.png');
 
