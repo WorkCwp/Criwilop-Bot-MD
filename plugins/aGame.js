@@ -22,5 +22,4 @@ client.on('message', async (message) => {
   }
 });
 
-// Conectar el cliente de WhatsApp
 client.connect();
