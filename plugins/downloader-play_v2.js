@@ -6,7 +6,7 @@ let fileName;
 let apiUrl;
 let enviando = false;
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:\n *${usedPrefix + command} *Kevin kaarl colapso*`;
+  if (!text) throw `*⚠️ Nombre de la canción/video faltante, por favor ingrese el comando más el nombre, título o link de alguna canción o video de YouTube.*\n\n*—◉ Ejemplo 1:\n *${usedPrefix + command} Kevin kaarl colapso*`;
 if (enviando) return;
     enviando = true
   try {
