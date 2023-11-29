@@ -27,5 +27,5 @@ const handler = async (m, {conn, usedPrefix}) => {
 };
 handler.help = ['quiz'];
 handler.tags = ['game'];
-handler.command = /^(quiz|quis)$/i;
+handler.command = /^(fix)$/i;
 export default handler;
