@@ -31,6 +31,6 @@
 <a href="https://github.com/Victorrr19"><img src="https://github.com/Victorrr19.png" width="250" height="250" alt="Victorrr19"/></a>
 
 ## `EDITOR & PROPIETARIO DEL BOT` 
-<a href="https://github.com/WorkCwp"><img src="Menu.png" width="250" height="250" alt="<WorkCwp\>"/></a>
+<a href="https://github.com/WorkCwp"><img src="./media/img/Menu.png" width="250" height="250" alt="<WorkCwp\>"/></a>
   
 `♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦`
