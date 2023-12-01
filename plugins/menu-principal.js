@@ -32,7 +32,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ${readMore}
 *╭───── • ◆ • ─────┅┅┄┄*
-     *ᴇsᴛᴀᴅᴏ ᴅᴇʟ ʙᴏᴛ *
+     *ᴇsᴛᴀᴅᴏ ᴅᴇʟ ʙᴏᴛ*
    
  ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
 
