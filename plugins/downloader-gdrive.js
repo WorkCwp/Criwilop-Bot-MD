@@ -9,7 +9,7 @@ const formatSize = sizeFormatter({
 });
 
 const handler = async (m, { conn, args }) => {
-  if (!args[0]) throw '*⚠️ ERROR, POR FAVOR PROPORCIONA UN ENLACE DE GOOGLE DRIVE VÁLIDO:*\n\n*- CORREO QUE TE ENVÍA EL SERVIDOR A:*\n*◉ https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view*';
+  if (!args[0]) throw '*⚠️ ERROR, POR FAVOR PROPORCIONA UN ENLACE DE GOOGLE DRIVE VÁLIDO:*';
   
   try {
     GDriveDl(args[0]).then(async (res) => {
