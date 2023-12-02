@@ -27,7 +27,7 @@ if (enviando) return;
 
     if (!data.resultado || !data.resultado.url) {
       enviando = false;
-      throw `⚠️ error.*`;
+      throw `*⚠️ error.*`;
     } else {
       try {
         if (command === 'play') {
@@ -56,12 +56,12 @@ if (enviando) return;
             }
           } catch {
             enviando = false;
-            throw `_*< DESCARGAS - PLAY V2 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+            throw `*⚠️ error*`;
           }
        }
     }
 
-    const dataMessage = `Título:* ${data.resultado.title}\n ${data.resultado.url}`;
+    const dataMessage = `🔸 Título:* ${data.resultado.title}\n ${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
@@ -69,11 +69,11 @@ if (enviando) return;
       enviando = false;
     } else {
       enviando = false;
-      throw `_*< DESCARGAS - PLAY V2 />*_\n\n*⚠️ error*`;
+      throw `*⚠️ error*`;
     }
   } catch (error) {
     enviando = false;
-    throw `_*< DESCARGAS - PLAY V2 />*_\n\n*⚠️ error*`;
+    throw `*⚠️ error*`;
   }
 };
 handler.command = ['play', 'play2'];
