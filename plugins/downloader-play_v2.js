@@ -30,13 +30,13 @@ if (enviando) return;
       throw `*⚠️ No se pudo obtener la URL del video/canción.*`;
     } else {
       try {
-        if (command === 'play') {
+        if (command === 'playy') {
               m.react('🎧')
               apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
               buff = await conn.getFile(apiUrl);
-            } else if (command === 'play2') {
+            } else if (command === 'playy2') {
           m.react('🎥')
               apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
               mimeType = 'video/mp4';
@@ -45,13 +45,13 @@ if (enviando) return;
         }
       } catch {
           try {
-            if (command === 'play') {
+            if (command === 'playy') {
               m.react('🎧')
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
               buff = await conn.getFile(apiUrl);
-            } else if (command === 'play2') {
+            } else if (command === 'playy2') {
               m.react('🎥')
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
               mimeType = 'video/mp4';
@@ -82,5 +82,5 @@ ${data.resultado.url}`;
     throw `*⚠️ Error: ${error.message || 'Ocurrió un error inesperado'}.*`;
   }
 };
-handler.command = ['play', 'play2'];
+handler.command = ['playy', 'playy2'];
 export default handler;
