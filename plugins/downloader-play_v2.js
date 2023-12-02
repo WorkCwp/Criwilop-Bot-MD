@@ -1,46 +1,80 @@
-// Importar las librerías necesarias
-const { Client } = require('@adiwajshing/baileys');
-const Scraper = require('@bochilteam/scraper');
-const axios = require('axios');
-
-// Crear una instancia del cliente de WhatsApp
-const client = new Client();
-
-// Escuchar eventos de mensajes entrantes
-client.on('message', async (message) => {
+import fetch from 'node-fetch';
+let data;
+let buff;
+let mimeType;
+let fileName;
+let apiUrl;
+let enviando = false;
+const handler = async (m, { command, usedPrefix, conn, text }) => {
+  if (!text) throw `_*< DESCARGAS - PLAY v2 />*_\n\n*[ ℹ️ ] Hace falta el título del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_\n\n*[ 💡 ] Ejemplo 2:* _${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p_`;
+if (enviando) return;
+    enviando = true
   try {
-    // Verificar si el mensaje es un comando para descargar música o video
-    if (message.body.startsWith('/desc')) {
-      const text = message.body.split(' ')[1]; // Obtener el texto después del comando
+    const apiUrls = [
+      `https://api-brunosobrino.zipponodes.xyz/api/ytplay?text=${text}`,
+      `https://api-brunosobrino.onrender.com/api/ytplay?text=${text}`
+    ];
 
-      // Construir la URL de la API de descarga de YouTube
-      const apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/ytplay?text=${text}`;
+    for (const url of apiUrls) {
+      try {
+        const res = await fetch(url);
+        data = await res.json();
+        if (data.resultado && data.resultado.url) {
+          break;
+        }
+      } catch {}
+    }
 
-      // Realizar la solicitud a la API
-      const response = await axios.get(apiUrl);
+    if (!data.resultado || !data.resultado.url) {
+      enviando = false;
+      throw `_*< DESCARGAS - PLAY V2 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+    } else {
+      try {
+        if (command === 'play') {
+              apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
+              mimeType = 'audio/mpeg';
+              fileName = 'error.mp3';
+              buff = await conn.getFile(apiUrl);
+            } else if (command === 'play2') {
+              apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
+              mimeType = 'video/mp4';
+              fileName = 'error.mp4';
+              buff = await conn.getFile(apiUrl);
+        }
+      } catch {
+          try {
+            if (command === 'play') {
+              apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
+              mimeType = 'audio/mpeg';
+              fileName = 'error.mp3';
+              buff = await conn.getFile(apiUrl);
+            } else if (command === 'play2') {
+              apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
+              mimeType = 'video/mp4';
+              fileName = 'error.mp4';
+              buff = await conn.getFile(apiUrl);
+            }
+          } catch {
+            enviando = false;
+            throw `_*< DESCARGAS - PLAY V2 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+          }
+       }
+    }
 
-      // Verificar si la solicitud fue exitosa
-      if (response.status === 200) {
-        const { data } = response;
+    const dataMessage = `_*< DESCARGAS - PLAY V2 />*_\n\n▢ *Título:* ${data.resultado.title}\n\n▢ *Publicado:* ${data.resultado.publicDate}\n\n▢ *Canal:* ${data.resultado.channel}\n\n▢ *Vídeo URL:* ${data.resultado.url}`;
+    await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
-        // Descargar el archivo de música o video
-        const scraper = new Scraper();
-        const downloadUrl = data.downloadUrl;
-        const file = await scraper.download(downloadUrl);
-
-        // Enviar el archivo descargado como respuesta al mensaje
-        await client.sendMessage(message.from, file, { sendMediaAsSticker: true });
-      } else {
-        // Enviar un mensaje de error si la solicitud no fue exitosa
-        await client.sendMessage(message.from, 'Ocurrió un error al descargar el archivo.');
-      }
+    if (buff) {
+      await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName}, {quoted: m});
+      enviando = false;
+    } else {
+      enviando = false;
+      throw `_*< DESCARGAS - PLAY V2 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
     }
   } catch (error) {
-    console.error(error);
-    await client.sendMessage(message.from, 'Ocurrió un error inesperado.');
+    enviando = false;
+    throw `_*< DESCARGAS - PLAY V2 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
   }
-});
-
-// Iniciar sesión en WhatsApp
-client.connect();
-
+};
+handler.command = ['play', 'play2'];
+export default handler;
