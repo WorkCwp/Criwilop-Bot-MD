@@ -61,7 +61,7 @@ if (enviando) return;
        }
     }
 
-    const dataMessage = `${data.resultado.url}`;
+    const dataMessage = `Título:* ${data.resultado.title}\n ${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
