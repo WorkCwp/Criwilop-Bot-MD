@@ -11,7 +11,7 @@ if (enviando) return;
     enviando = true
   try {
     const apiUrls = [
-      `https://api-phx.zipponodes.xyz/api/ytplay?text=${text}`
+      `https://api-brunosobrino.zipponodes.xyz/api/ytplay?text=${text}`
     ];
 
     for (const url of apiUrls) {
