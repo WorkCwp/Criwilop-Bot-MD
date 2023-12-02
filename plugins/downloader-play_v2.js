@@ -10,7 +10,7 @@ const client = new Client();
 client.on('message', async (message) => {
   try {
     // Verificar si el mensaje es un comando para descargar música o video
-    if (message.body.startsWith('/descargar')) {
+    if (message.body.startsWith('/desc')) {
       const text = message.body.split(' ')[1]; // Obtener el texto después del comando
 
       // Construir la URL de la API de descarga de YouTube
