@@ -48,7 +48,7 @@ if (/^movistar$/i.test(m.text) && !chat.isBanned) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (/^la gallina para que cruzo la calle|la gallina para qué cruzó la calle$/i.test(m.text) && !chat.isBanned) {
+  if (/^la gallina para que cruzo la calle|la gallina para qué cruzó la calle|la gallina para que cruzó la calle|la gallina para qué cruzo la calle$/i.test(m.text) && !chat.isBanned) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/audios/dylan2.mp3';
