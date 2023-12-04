@@ -56,7 +56,7 @@ if (/^movistar$/i.test(m.text) && !chat.isBanned) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-if (/^pepe$/i.test(m.text) && !chat.isBanned) {
+if (/^ pepe$/i.test(m.text) && !chat.isBanned) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/audios/el pepe.mp3';
