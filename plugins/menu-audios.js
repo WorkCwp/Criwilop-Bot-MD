@@ -21,7 +21,22 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `*╭───── • ◆ • ─────┅┅┄┄*
      * ${taguser}*
-  *ᴇsᴛᴇ ʙᴏᴛ ɴᴏ ᴛɪᴇɴᴇ ᴀᴜᴅɪᴏs*
+     *ᴍᴇɴᴜ ᴅᴇ ᴀᴜᴅɪᴏs *
+
+  🔸*_Basado_*
+  🔸*_bienvenido_*
+  🔸*_Bueno si_*
+  🔸*_A nadie le importa_*
+  🔸*_la gallina para qué cruzó la calle_*
+  🔸*_El pepe_*
+  🔸*_Internet gratis_*
+  🔸*_Joder_*
+  🔸*_XD_*
+  🔸*_Grupo muerto_*
+  🔸*_Muchos mensajes_*
+  🔸*_No me hables_*
+  🔸*_No me hagas usar esto_*
+  
 *╰───── • ◆ • ─────┅┅┄┄* 
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
     if (m.isGroup) {
