@@ -56,7 +56,7 @@ if (/^movistar$/i.test(m.text) && !chat.isBanned) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-if (/^ pepe$/i.test(m.text) && !chat.isBanned) {
+if (/^el pepe|pepe$/i.test(m.text) && !chat.isBanned) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
     const vn = './media/audios/el pepe.mp3';
@@ -91,7 +91,7 @@ if (/^adios$/i.test(m.text) && !chat.isBanned) {
   if (/^xd$/i.test(m.text) && !chat.isBanned) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/audios/momento equisde.mp3';
+    const vn = './media/audios/Momento equisde.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
