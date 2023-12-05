@@ -43,12 +43,12 @@ if (enviando) return;
         }
       } catch {
           try {
-            if (command === 'play') {
+            if (command === 'playy') {
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
               mimeType = 'audio/mpeg';
               fileName = 'error.mp3';
               buff = await conn.getFile(apiUrl);
-            } else if (command === 'play2') {
+            } else if (command === 'playy2') {
               apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
               mimeType = 'video/mp4';
               fileName = 'error.mp4';
@@ -76,5 +76,5 @@ if (enviando) return;
     throw `*⚠️ error*`;
   }
 };
-handler.command = ['play', 'play2'];
+handler.command = ['playy', 'playy2'];
 export default handler;
