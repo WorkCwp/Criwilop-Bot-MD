@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*YouTube*_\n\n*⚠️ nombre del archivo faltante.*\n\n*🔸 por ejemplo:* _${usedPrefix + command} kevin kaarl_`;
+  if (!text) throw `_*🎧 YouTube 🎧*_\n\n*⚠️ nombre del archivo faltante.*\n\n*🔸 por ejemplo:* _${usedPrefix + command} kevin kaarl_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
@@ -16,7 +16,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*YouTubeP*_\n\n🔸 *Título:* ${yt_play[0].title}\n\▢ *Autor:* ${yt_play[0].author.name}\n\n*🔸Cargando: ${additionalText}. espere...*`.trim();
+    const texto1 = `_*🎧 YouTube 🎧*_\n\n🔸 *Título:* ${yt_play[0].title}\n\▢ *Autor:* ${yt_play[0].author.name}\n\n*🔸Cargando: ${additionalText}. espere...*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
@@ -38,7 +38,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*YouTube*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
+    throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
     }}
     if (command == 'play2') {
     try {   
@@ -60,7 +60,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*YouTube*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
+    throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
     }
   }
 };
