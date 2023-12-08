@@ -80,5 +80,5 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
   }
 };
 
-handler.command = ['playy', 'playy2'];
+handler.command = ['play', 'play2'];
 export default handler;
