@@ -33,12 +33,12 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
       throw `*⚠️ Error.*`;
     } else {
       try {
-        if (command === 'playy') {
+        if (command === 'plyy') {
           apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
           mimeType = 'audio/mpeg';
           fileName = 'error.mp3';
           buff = await conn.getFile(apiUrl);
-        } else if (command === 'playy2') {
+        } else if (command === 'play2') {
           apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
           mimeType = 'video/mp4';
           fileName = 'error.mp4';
@@ -46,12 +46,12 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
         }
       } catch {
         try {
-          if (command === 'playy') {
+          if (command === 'play') {
             apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
             mimeType = 'audio/mpeg';
             fileName = 'error.mp3';
             buff = await conn.getFile(apiUrl);
-          } else if (command === 'playy2') {
+          } else if (command === 'play2') {
             apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
             mimeType = 'video/mp4';
             fileName = 'error.mp4';
