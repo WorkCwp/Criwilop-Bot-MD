@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+
 let data;
 let buff;
 let mimeType;
@@ -30,10 +31,10 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
 
     if (!data.resultado || !data.resultado.url) {
       enviando = false;
-      throw `*⚠️ Error.*`;
+      throw `*⚠️ Error en la búsqueda.*`;
     } else {
       try {
-        if (command === 'plyy') {
+        if (command === 'play') {
           apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
           mimeType = 'audio/mpeg';
           fileName = 'error.mp3';
@@ -44,23 +45,8 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
           fileName = 'error.mp4';
           buff = await conn.getFile(apiUrl);
         }
-      } catch {
-        try {
-          if (command === 'play') {
-            apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
-            mimeType = 'audio/mpeg';
-            fileName = 'error.mp3';
-            buff = await conn.getFile(apiUrl);
-          } else if (command === 'play2') {
-            apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
-            mimeType = 'video/mp4';
-            fileName = 'error.mp4';
-            buff = await conn.getFile(apiUrl);
-          }
-        } catch {
-          enviando = false;
-          throw `*⚠️ Error*`;
-        }
+      } catch (error) {
+        throw `*⚠️ Error al descargar el archivo.*`;
       }
     }
 
@@ -69,14 +55,13 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
 
     if (buff) {
       await conn.sendMessage(m.chat, { [mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName }, { quoted: m });
-      enviando = false;
     } else {
-      enviando = false;
-      throw `*⚠️ Error*`;
+      throw `*⚠️ Error al enviar el archivo.*`;
     }
   } catch (error) {
+    throw error;
+  } finally {
     enviando = false;
-    throw `*⚠️ Error*`;
   }
 };
 
