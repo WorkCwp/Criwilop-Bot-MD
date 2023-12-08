@@ -5,10 +5,13 @@ let mimeType;
 let fileName;
 let apiUrl;
 let enviando = false;
+
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `*⚠️ ingresa un titulo a buscar`;
-if (enviando) return;
-    enviando = true
+  if (!text) throw `*⚠️ Ingresa un título a buscar`;
+
+  if (enviando) return;
+  enviando = true;
+
   try {
     const apiUrls = [
       `https://api-brunosobrino.zipponodes.xyz/api/ytplay?text=${text}`,
@@ -27,54 +30,55 @@ if (enviando) return;
 
     if (!data.resultado || !data.resultado.url) {
       enviando = false;
-      throw `*⚠️ error.*`;
+      throw `*⚠️ Error.*`;
     } else {
       try {
-        if (command === 'play') {
-              apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
-              mimeType = 'audio/mpeg';
-              fileName = 'error.mp3';
-              buff = await conn.getFile(apiUrl);
-            } else if (command === 'play2') {
-              apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
-              mimeType = 'video/mp4';
-              fileName = 'error.mp4';
-              buff = await conn.getFile(apiUrl);
+        if (command === 'playy') {
+          apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
+          mimeType = 'audio/mpeg';
+          fileName = 'error.mp3';
+          buff = await conn.getFile(apiUrl);
+        } else if (command === 'playy2') {
+          apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
+          mimeType = 'video/mp4';
+          fileName = 'error.mp4';
+          buff = await conn.getFile(apiUrl);
         }
       } catch {
-          try {
-            if (command === 'playy') {
-              apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
-              mimeType = 'audio/mpeg';
-              fileName = 'error.mp3';
-              buff = await conn.getFile(apiUrl);
-            } else if (command === 'playy2') {
-              apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
-              mimeType = 'video/mp4';
-              fileName = 'error.mp4';
-              buff = await conn.getFile(apiUrl);
-            }
-          } catch {
-            enviando = false;
-            throw `*⚠️ error*`;
+        try {
+          if (command === 'playy') {
+            apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${data.resultado.url}`;
+            mimeType = 'audio/mpeg';
+            fileName = 'error.mp3';
+            buff = await conn.getFile(apiUrl);
+          } else if (command === 'playy2') {
+            apiUrl = `https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${data.resultado.url}`;
+            mimeType = 'video/mp4';
+            fileName = 'error.mp4';
+            buff = await conn.getFile(apiUrl);
           }
-       }
+        } catch {
+          enviando = false;
+          throw `*⚠️ Error*`;
+        }
+      }
     }
 
-    const dataMessage = `🔸 Título:* ${data.resultado.title}\n ${data.resultado.url}`;
+    const dataMessage = `🔸 Título: ${data.resultado.title}\n${data.resultado.url}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
-      await conn.sendMessage(m.chat, {[mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName}, {quoted: m});
+      await conn.sendMessage(m.chat, { [mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName }, { quoted: m });
       enviando = false;
     } else {
       enviando = false;
-      throw `*⚠️ error*`;
+      throw `*⚠️ Error*`;
     }
   } catch (error) {
     enviando = false;
-    throw `*⚠️ error*`;
+    throw `*⚠️ Error*`;
   }
 };
+
 handler.command = ['playy', 'playy2'];
 export default handler;
