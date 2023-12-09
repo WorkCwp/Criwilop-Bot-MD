@@ -1,11 +1,10 @@
 import fetch from 'node-fetch';
-
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 function getRandomImage() {
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
 }
 
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
       m.react('✋')
