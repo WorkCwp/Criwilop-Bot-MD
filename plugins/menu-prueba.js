@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 const imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
 const imagen2 = fs.readFileSync('./media/img/Menu.png');
 const imagen3 = fs.readFileSync('./media/img/Menu3.png');
