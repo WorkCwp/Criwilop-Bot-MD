@@ -1,9 +1,11 @@
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  try {
-    let img = [imagen1, imagen2, imagen3];
+let img = [imagen1, imagen2, imagen3];
 
 const imgr = img[Math.floor(Math.random() * img.length)];
 
+
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+  try {
+    
     const pp = `${imgr}`;
 
 const str = `Menu 🍷`.trim();
