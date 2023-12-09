@@ -1,7 +1,5 @@
-const getRandomImage = () => {
-  const randomIndex = Math.floor(Math.random() * imgr.length);
+const randomIndex = Math.floor(Math.random() * imgr.length);
   return imagen[randomIndex];
-};
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
