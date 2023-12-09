@@ -1,21 +1,9 @@
 import fetch from 'node-fetch';
-
-const images = [
-  fs.readFileSync('./media/img/Menu2.jpg'),
-  fs.readFileSync('./media/img/Menu.png'),
-  fs.readFileSync('./media/img/Menu3.png')
-];
-
-function getRandomImage() {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  return images[randomIndex];
-}
-
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
       m.react('✋')
-    const pp = images;
+    const pp = imagen1;
     const d = new Date(new Date + 3600000);
     const locale = 'es';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
