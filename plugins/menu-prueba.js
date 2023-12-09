@@ -22,4 +22,3 @@ handler.command = /^(X)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
-*/
