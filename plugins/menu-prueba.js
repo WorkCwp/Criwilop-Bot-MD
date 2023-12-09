@@ -4,7 +4,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
     const pp = imagen1;
 
-    const img = './Menu2.jpg';
+   // const img = './Menu2.jpg';
 
 const str = `Menu 🍷`.trim();
 
