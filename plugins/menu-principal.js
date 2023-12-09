@@ -1,4 +1,11 @@
 import fetch from 'node-fetch';
+
+const images = [
+  fs.readFileSync('./media/img/Menu2.jpg'),
+  fs.readFileSync('./media/img/Menu.png'),
+  fs.readFileSync('./media/img/Menu3.png')
+];
+
 function getRandomImage() {
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
