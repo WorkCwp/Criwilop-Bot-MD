@@ -1,7 +1,7 @@
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
     
-    let pp = './media/img/Menu2.jpg';
+    let pp = './media/img/Menu2.jpg'
 
 
    /* imgr = [('./media/img/Menu2.jpg'),
