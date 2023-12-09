@@ -1,9 +1,12 @@
-const imagen = Math.floor(Math.random() * imgr.length);
-
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
-    let pp = imagen;
+    let pp = ('./media/img/Menu2.jpg';
 
+
+   /* imgr = [('./media/img/Menu2.jpg'),
+               ('./media/img/Menu.png'),
+               ('./media/img/Menu3.png')];
+    */
     const str = `Menu 🍷`.trim();
 
     if (m.isGroup) {
