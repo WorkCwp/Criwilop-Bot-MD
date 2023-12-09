@@ -1,15 +1,16 @@
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
+ 
+    const imgr = [fs.readFileSync('./media/img/Menu2.jpg'),
+                  fs.readFileSync('./media/img/Menu.png'),
+                  fs.readFileSync('./media/img/Menu3.png')];
     
-    let pp = fs.readFileSync('./media/img/Menu2.jpg');
+    let img = Math.floor(Math.random() * imgr.length);
+ 
+    let pp = img;
 
-
-   /* imgr = [('./media/img/Menu2.jpg'),
-               ('./media/img/Menu.png'),
-               ('./media/img/Menu3.png')];
-    */
     const str = `Menu 🍷`.trim();
-
+    
     if (m.isGroup) {
       const fkontak2 = {
         'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'},
