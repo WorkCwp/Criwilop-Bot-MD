@@ -3,9 +3,9 @@ const fs = require('fs');
 const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
   try {
     const imgr = [
-      fs.readFileSync('./media/img/Menu2.jpg'),
-      fs.readFileSync('./media/img/Menu.png'),
-      fs.readFileSync('./media/img/Menu3.png')
+      `fs.readFileSync('./media/img/Menu2.jpg')`,
+      `fs.readFileSync('./media/img/Menu.png')`,
+      `fs.readFileSync('./media/img/Menu3.png')`
     ];
 
     let img = Math.floor(Math.random() * imgr.length);
