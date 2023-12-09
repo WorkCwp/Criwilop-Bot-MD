@@ -1,9 +1,8 @@
-const randomIndex = Math.floor(Math.random() * imgr.length);
-  return imagen[randomIndex];
+const imagen = Math.floor(Math.random() * imgr.length);
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
-    const pp = imagen;
+    let pp = imagen;
 
     const str = `Menu 🍷`.trim();
 
