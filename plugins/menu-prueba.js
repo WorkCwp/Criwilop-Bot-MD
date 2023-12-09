@@ -2,6 +2,10 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
 
+    const pp = imagen1;
+
+    const img = './Menu2.jpg';
+
 m.reply('hola, este es el menú de prueba')
 
   if (m.isGroup) {
