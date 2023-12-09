@@ -1,10 +1,7 @@
-import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
 
     const pp = imagen1;
-
-   // const img = './Menu2.jpg';
 
 const str = `Menu 🍷`.trim();
 
