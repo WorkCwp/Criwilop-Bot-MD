@@ -1,6 +1,7 @@
-const handler = async (m, { conn }) => {
+import fetch from 'node-fetch';
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
-    const pp = `${randomImage}`;
+    const pp = imagen1;
 
     const str = `Menu 🍷`.trim();
 
