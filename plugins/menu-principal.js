@@ -1,9 +1,16 @@
 import fetch from 'node-fetch';
+const fs = require('fs');
+
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+function getRandomImage() {
+  const randomIndex = Math.floor(Math.random() * images.length);
+  return images[randomIndex];
+}
+
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
       m.react('✋')
-    const pp = imagen3;
+    const pp = images;
     const d = new Date(new Date + 3600000);
     const locale = 'es';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
