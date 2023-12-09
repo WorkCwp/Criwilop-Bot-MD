@@ -29,11 +29,12 @@ global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 /*global.imgr = [imagen1 = fs.readFileSync('./media/img/Menu2.jpg'),
                imagen2 = fs.readFileSync('./media/img/Menu.png'),
                imagen3 = fs.readFileSync('./media/img/Menu3.png')];
+*/
 
 global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
 global.imagen2 = fs.readFileSync('./media/img/Menu.png');
-global.magen3 = fs.readFileSync('./media/img/Menu3.png')
-*/
+global.imagen3 = fs.readFileSync('./media/img/Menu3.png')
+
                
 global.mods = [];
 
