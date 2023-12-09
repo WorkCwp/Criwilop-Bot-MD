@@ -26,12 +26,6 @@ global.titulowm2 = `♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫�
 global.igfg = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦';
 global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 
-
-global.imgr = [('./media/img/Menu2.jpg'),
-               ('./media/img/Menu.png'),
-               ('./media/img/Menu3.png')];
-
-
 /*global.imgr = [imagen1 = fs.readFileSync('./media/img/Menu2.jpg'),
                imagen2 = fs.readFileSync('./media/img/Menu.png'),
                imagen3 = fs.readFileSync('./media/img/Menu3.png')];
