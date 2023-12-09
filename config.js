@@ -27,11 +27,16 @@ global.igfg = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦
 global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 
 
-global.imgr = [imagen1 = fs.readFileSync('./media/img/Menu2.jpg'),
+global.imgr = [('./media/img/Menu2.jpg'),
+               ('./media/img/Menu.png'),
+               ('./media/img/Menu3.png')];
+
+
+/*global.imgr = [imagen1 = fs.readFileSync('./media/img/Menu2.jpg'),
                imagen2 = fs.readFileSync('./media/img/Menu.png'),
                imagen3 = fs.readFileSync('./media/img/Menu3.png')];
 
-/*global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
+global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
 global.imagen2 = fs.readFileSync('./media/img/Menu.png');
 global.magen3 = fs.readFileSync('./media/img/Menu3.png')
 */
