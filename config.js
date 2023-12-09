@@ -27,10 +27,15 @@ global.igfg = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦
 global.wait = '*⚠️ 𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 ...*';
 
 
-global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
-global.imagen2 = fs.readFileSync('./media/img/Menu.png');
-global.imagen3 = fs.readFileSync('./media/img/Menu3.png');
+global.imgr = [imagen1 = fs.readFileSync('./media/img/Menu2.jpg'),
+               imagen2 = fs.readFileSync('./media/img/Menu.png'),
+               imagen3 = fs.readFileSync('./media/img/Menu3.png')];
 
+/*global.imagen1 = fs.readFileSync('./media/img/Menu2.jpg');
+global.imagen2 = fs.readFileSync('./media/img/Menu.png');
+global.magen3 = fs.readFileSync('./media/img/Menu3.png')
+*/
+               
 global.mods = [];
 
 //* *******Tiempo***************
@@ -42,7 +47,7 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝`;
+global.wm2 = `▸ ${dia} ${fecha}\n▸ ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦`;
 global.gt = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦';
 global.mysticbot = '♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦';
 global.md = 'https://github.com';
