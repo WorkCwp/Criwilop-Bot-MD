@@ -1,7 +1,7 @@
 const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
   try {
     
-    let pp = imagen2;
+    let pp = imagen3;
 
     const str = `Menú 🍷`.trim();
 
