@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-const fs = require('fs');
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 function getRandomImage() {
