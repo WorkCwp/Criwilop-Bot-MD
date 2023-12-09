@@ -1,12 +1,5 @@
-let img = [imagen1, imagen2, imagen3];
-
-const getRandomImage = () => {
-  return img[Math.floor(Math.random() * img.length)];
-};
-
 const handler = async (m, { conn }) => {
   try {
-    const randomImage = getRandomImage();
     const pp = `${randomImage}`;
 
     const str = `Menu 🍷`.trim();
