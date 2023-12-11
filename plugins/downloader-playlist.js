@@ -27,7 +27,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
       return `[${i + 1}] ${v.title}
 ↳ 🫐 *_Link :_* ${v.url}
 ↳ 🕒 *_Duración :_* ${v.timestamp}`;
-    }).join('\n\n─┈┈┈┄┄╌╌╌╌┄┄┈┈┈─\n\n');
+    }).join('\n\n────┈┈┈┄┄╌╌╌╌┄┄┈┈┈────\n\n');
     conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, m);
     global.videoList.push(vids_);
   } catch {
