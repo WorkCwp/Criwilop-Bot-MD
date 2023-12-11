@@ -64,7 +64,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.command = /^(playy|playy2)$/i;
+handler.command = /^(play|play2)$/i;
 export default handler;
 
 async function search(query, options = {}) {
