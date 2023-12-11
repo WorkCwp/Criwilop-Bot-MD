@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*🎧 YouTube 🎧*_\n\n*⚠️ nombre del archivo faltante.*\n\n*🔸 por ejemplo:* _${usedPrefix + command} kevin kaarl_`;
+  if (!text) throw `_*< DESCARGAS - PLAY />*_\n\n*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
@@ -16,7 +16,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*🎧 YouTube 🎧*_\n\n🔸 *Título:* ${yt_play[0].title}\n\▢ *Autor:* ${yt_play[0].author.name}\n\n*🔸Cargando: ${additionalText}. espere...*`.trim();
+    const texto1 = `_*< DESCARGAS - PLAY />*_\n\n▢ *Título:* ${yt_play[0].title}\n\n▢ *Publicado:* ${yt_play[0].ago}\n\n▢ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n▢ *Autor:* ${yt_play[0].author.name}\n\n▢ *ID:* ${yt_play[0].videoId}\n\n▢ *Tipo:* ${yt_play[0].type}\n\n▢ *Enlace:* ${yt_play[0].url}\n\n▢ *Canal:* ${yt_play[0].author.url}\n\n*[ ℹ️ ] Se está enviando el ${additionalText}. espere...*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
@@ -38,7 +38,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
+    throw '_*< DESCARGAS - PLAY />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
     }}
     if (command == 'play2') {
     try {   
@@ -50,7 +50,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB2 = fileSizeInKB2 / 1024;
     const size2 = fileSizeInMB2.toFixed(2);       
     if (size2 >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `_*YouTube*_\n\n*🔸 Descarga del vídeo en: ${video}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `_*< DESCARGAS - PLAY />*_\n\n*[ ✔ ] Descargue su vídeo en ${video}*`}, {quoted: m});
     return;    
     }     
     if (size2 >= limit1 && size2 <= limit2) {  
@@ -59,10 +59,9 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else {
     await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
     return;    
-    }} catch (error) {
-  console.error('Error:', error);
-  throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, por favor inténtalo de nuevo más tarde.*';
-}
+    }} catch {
+    throw '_*< DESCARGAS - PLAY />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
+    }
   }
 };
 handler.command = /^(play|play2)$/i;
@@ -109,73 +108,3 @@ const getBuffer = async (url, options) => {
     const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1,}, ...options, responseType: 'arraybuffer'});
     return res.data;
 };
-
-/*import fetch from 'node-fetch';
-
-let data;
-let buff;
-let mimeType;
-let fileName;
-let apiUrl;
-let enviando = false;
-
-const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `*⚠️ Ingresa un título a buscar*`;
-
-  if (enviando) return;
-  enviando = true;
-
-  try {
-    const apiUrls = [
-      `https://api-brunosobrino.zipponodes.xyz/api/ytplay?text=${text}`,
-      `https://api-brunosobrino.onrender.com/api/ytplay?text=${text}`
-    ];
-
-    for (const url of apiUrls) {
-      try {
-        const res = await fetch(url);
-        data = await res.json();
-        if (data.resultado && data.resultado.url) {
-          break;
-        }
-      } catch {}
-    }
-
-    if (!data.resultado || !data.resultado.url) {
-      enviando = false;
-      throw `*⚠️ Error en la búsqueda.*`;
-    } else {
-      try {
-        if (command === 'play') {
-          apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp3?url=${data.resultado.url}`;
-          mimeType = 'audio/mpeg';
-          fileName = 'error.mp3';
-          buff = await conn.getFile(apiUrl);
-        } else if (command === 'play2') {
-          apiUrl = `https://api-brunosobrino.zipponodes.xyz/api/v1/ytmp4?url=${data.resultado.url}`;
-          mimeType = 'video/mp4';
-          fileName = 'error.mp4';
-          buff = await conn.getFile(apiUrl);
-        }
-      } catch (error) {
-        throw `*⚠️ Error al descargar el archivo.*`;
-      }
-    }
-
-    const dataMessage = `🔸 Título: ${data.resultado.title}\n${data.resultado.url}`;
-    await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
-
-    if (buff) {
-      await conn.sendMessage(m.chat, { [mimeType.startsWith('audio') ? 'audio' : 'video']: buff.data, mimetype: mimeType, fileName: fileName }, { quoted: m });
-    } else {
-      throw `*⚠️ Error al enviar el archivo.*`;
-    }
-  } catch (error) {
-    throw error;
-  } finally {
-    enviando = false;
-  }
-};
-
-handler.command = ['play', 'play2'];
-export default handler*/
