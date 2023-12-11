@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     const teks = results.all.map((v, i) => {
       const link = v.url;
       vids_.urls.push(link);
-      return `[🌬️${i + 1}] ${v.title}
+      return `[🔗${i + 1}🔗] ${v.title}
  🔸 *_Link :_* ${v.url}
  🕓 *_Duración :_* ${v.timestamp}`;
     }).join('\n\n────┈┈┈┄┄╌╌╌╌┄┄┈┈┈────\n\n');
