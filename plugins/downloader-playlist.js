@@ -36,5 +36,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 handler.help = ['playlist *<texto>*'];
 handler.tags = ['search'];
-handler.command = /^play|play2$/i;
+handler.command = /^playlist|playlist2$/i;
 export default handler;
