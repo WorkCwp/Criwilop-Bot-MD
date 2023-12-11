@@ -1,7 +1,7 @@
 import yts from 'yt-search';
 import fs from 'fs';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!text) throw `*⚠️ Nombre de la canción faltante, por favor ingrese el comando más el nombre/titulo de una canción*\n\n*—◉ Ejemplo:*\n*${usedPrefix + command} Begin you*`;
+  if (!text) throw `*⚠️ por favor ingrese el comando más el nombre/titulo de una canción*\n\n*—◉ Ejemplo:*\n*${usedPrefix + command} kevin kaarl*`;
   try {
     const vids_ = {
       from: m.sender,
