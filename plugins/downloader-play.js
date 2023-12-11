@@ -59,9 +59,10 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else {
     await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
     return;    
-    }} catch {
-    throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, porfavor intente mas tarde.*';    
-    }
+    }} catch (error) {
+  console.error('Error:', error);
+  throw '_*🎧 YouTube 🎧*_\n\n*⚠️ Error, por favor inténtalo de nuevo más tarde.*';
+}
   }
 };
 handler.command = /^(play|play2)$/i;
