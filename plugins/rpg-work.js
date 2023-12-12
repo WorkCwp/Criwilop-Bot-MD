@@ -2,10 +2,10 @@ const handler = async (m, {conn, isPrems}) => {
   let enviando;
   if (enviando) return
   enviando = true
-  const hasil = Math.floor(Math.random() * 5000);
-  const time = global.db.data.users[m.sender].lastwork + 600000;
-  if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `⚔️ *¡Espera un momento pequeño aventurero!* ⚔️\n\n*—◉ Regresa a la travesía en ${msToTime(time - new Date())} ⏳*`;
-  conn.sendMessage(m.chat, {text: `🏞️ *Te embarcas en una emocionante aventura:*\n\n🛠️ *${pickRandom(global.work)}*\n\n*¡Ganaste ${hasil} exp por tu valentía!*`}, {quoted: m});
+  const hasil = Math.floor(Math.random() * 50000);
+  const time = global.db.data.users[m.sender].lastwork + 900000;
+  if (new Date - global.db.data.users[m.sender].lastwork < 900000) throw `⚔️ *¡Espera un momento pequeño aventurero!* ⚔️\n\n*—◉ Regresa a la travesía en ${msToTime(time - new Date())} ⏳*`;
+  conn.sendMessage(m.chat, {text: `🍁 *Empiezas la chamba:*\n\n🛠️ *${pickRandom(global.work)}*\n\n*🍂 Te pagaron ${hasil} exp por tu dia de chamba*`}, {quoted: m});
   global.db.data.users[m.sender].exp += hasil;
   global.db.data.users[m.sender].lastwork = new Date() * 1;
   enviando = false
