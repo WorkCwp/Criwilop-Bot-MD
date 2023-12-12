@@ -1,21 +1,21 @@
 const handler = async (m, {conn, isPrems}) => { // lastmiming
   const user = global.db.data.users[m.sender];
   const premium = user.premium;
-  const minar = `${pickRandom(['Que pro 😎 has minado',
-    '🌟✨ Genial!! Obtienes',
-    'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
-    'Has Minado!!',
-    '😲 Lograste Minar la cantidad de',
+  const minar = `${pickRandom(['🪄has minado',
+    '🍁Obtienes',
+    '🗡️Obtienes',
+    '🌟Has Minado!!',
+    '❄️Minaste la cantidad de',
     'Tus Ingresos subiran gracias a que minaste',
-    '⛏️⛏️⛏️⛏️⛏️ Minando',
-    '🤩 SII!!! AHORA TIENES',
-    'La minaria esta de tu lado, por ello obtienes',
-    '😻 La suerte de Minar',
-    '♻️ Tu Mision se ha cumplido, lograste minar',
+    '⛏️Minando',
+    '🍷TIENES',
+    '🌀obtienes',
+    '🍂suerte de Minar',
+    '🪢lograste minar',
     '⛏️ La Mineria te ha beneficiado con',
-    '🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
-    '👾 Gracias a que has minado tus ingresos suman',
-    'Felicidades!! Ahora tienes', '⛏️⛏️⛏️ Obtienes'])}`;
+    '🌬️ Obtienes',
+    '🪵 ahora suma a tus ingresos',
+    '💣Felicidades'])}`;
   const pp = 'https://png.pngtree.com/thumb_back/fw800/background/20220428/pngtree-cartoon-mining-game-design-composition-with-different-mining-equipment-inside-the-image_1108471.jpg';
   const aqua = `${pickRandom([0, 2, 3, 1, 5])}` * 1;
   const aquapremium = `${pickRandom([2, 4, 6, 7, 5, 9])}` * 1;
