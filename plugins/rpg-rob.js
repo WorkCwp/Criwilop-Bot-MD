@@ -1,12 +1,12 @@
-const ro = 3000;
+const ro = 1;
 const handler = async (m, {conn, usedPrefix, command}) => {
   const time = global.db.data.users[m.sender].lastrob + 7200000;
   if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⏱️¡Hey! Espera ${msToTime(time - new Date())} para volver a robar*`;
   let who;
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
   else who = m.chat;
-  if (!who) throw `*⚠️ Etiqueta a alguien para robar.*`;
-  if (!(who in global.db.data.users)) throw `*⚠️ El usuario no se encuentra en mi base de datos.*`;
+  if (!who) throw `*⚠️ usuario no etiquetado.*`;
+  if (!(who in global.db.data.users)) throw `*⚠️ usuario no encontrado.*`;
   const users = global.db.data.users[who];
   const rob = Math.floor(Math.random() * ro);
   if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} xp*\nNo robes a un pobre v":`, null, {mentions: [who]});
