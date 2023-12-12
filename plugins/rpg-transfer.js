@@ -6,12 +6,12 @@ async function handler(m, { conn, args, usedPrefix, command }) {
   const user = global.db.data.users[m.sender];
   const item = items.filter((v) => v in user && typeof user[v] == 'number');
   const lol = `*⚠️ Uso del comamdo.* 
-*—◉ ${usedPrefix + command}*  [tipo] [cantidad] [@user]
-*📌 Ejemplo:* ${usedPrefix + command} exp 65 @${m.sender.split('@')[0]}
+*🔸 ${usedPrefix + command}*  [tipo] [cantidad] [@user]
+*🔸 Ejemplo:* ${usedPrefix + command} exp 65 @${m.sender.split('@')[0]}
 
-*—◉ 📍 Artículos transferibles.*
-▢ *limit* = diamantes
-▢ *exp* = experiencia
+*🔸 Artículos transferibles.*
+ 🔸 *limit* = diamantes
+ 🔸 *exp* = experiencia
 `.trim();
   const type = (args[0] || '').toLowerCase();
   if (!item.includes(type)) return conn.sendMessage(m.chat, {text: lol, mentions: [m.sender]}, {quoted: m});
@@ -21,11 +21,11 @@ async function handler(m, { conn, args, usedPrefix, command }) {
   if (!(who in global.db.data.users)) return conn.sendMessage(m.chat, {text: `*⚠️ El usuario ${who} no está en la base de datos.*`, mentions: [m.sender]}, {quoted: m});
   if (user[type] * 1 < count) return conn.sendMessage(m.chat, {text: `*⚠️ No tienes suficientes ${type} para transferir.*`, mentions: [m.sender]}, {quoted: m});
 const confirm = `*¿Está seguro de que desea transferir ${count} ${type} a @${(who || '').replace(/@s\.whatsapp\.net/g, '')}?* 
-*—◉ Tienes 60 segundos para confirmar*
+*🔸 Tienes 60 segundos para confirmar*
 
-*—◉ Escriba:* 
-*◉ si = para acertar*
-*◉ no = para cancelar*`.trim();
+*🍂 Escriba:* 
+*🔸 si = para aceptar*
+*🔸 no = para cancelar*`.trim();
   await conn.sendMessage(m.chat, {text: confirm, mentions: [who]}, {quoted: m});
   confirmation[m.sender] = { sender: m.sender, to: who, message: m, type, count, timeout: setTimeout(() => (conn.sendMessage(m.chat, {text: '*⚠️ Se acabó el tiempo, no se obtuvo respuesta. Transferencia cancelada.*', mentions: [m.sender]}, {quoted: m}), delete confirmation[m.sender]), 60 * 1000)};
 }
