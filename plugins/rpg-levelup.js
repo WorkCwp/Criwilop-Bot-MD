@@ -11,11 +11,11 @@ const handler = async (m, { conn }) => {
 🏰 *Gremio de Aventureros*
 *¡Bienvenido, ${usertag}!*
 
-*◉ Nivel actual:* ${user.level}
-*◉ Rango actual:* ${user.role}
-*◉ Puntos de Experiencia:* ${user.exp - min}/${xp}
+*🔸 Nivel actual:* ${user.level}
+*🔸 Rango actual:* ${user.role}
+*🔸 Puntos de Experiencia:* ${user.exp - min}/${xp}
 
-*—◉ Para ascender de nivel necesitas obtener ${max - user.exp} puntos de experiencia más. Sigue interactuando con el Bot!.*`.trim();
+*☣️ Para ascender de nivel necesitas obtener ${max - user.exp} puntos de experiencia más. Sigue interactuando con el Bot!.*`.trim();
     return conn.sendMessage(m.chat, {text: message, mentions: [m.sender]}, {quoted: m});
   }
   const before = user.level * 1;
