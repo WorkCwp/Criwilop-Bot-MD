@@ -11,7 +11,7 @@ const handler = async (m, {conn, usedPrefix, command, text}) => {
   } else {
     if (aki.sesi) return conn.reply(m.chat, '*⚠️ 𝚃𝙾𝙳𝙰𝚅𝙸𝙰 𝙴𝚂𝚃𝙰𝚂 𝙴𝙽 𝚄𝙽𝙰 𝚂𝙴𝚂𝙸𝙾𝙽 (𝙿𝙰𝚁𝚃𝙸𝙳𝙰) 𝙳𝙴 𝙰𝙺𝙸𝙽𝙰𝚃𝙾𝚁*', aki.soal);
     try {
-      const res = await fetch(`https://api.lolhuman.xyz/api/akinator/start?apikey=${lolkeysapi}`);
+      const res = await fetch(`https://api.lolhuman.xyz/api/akinator/start?apikey=GataDios`);
       const anu = await res.json();
       if (anu.status !== 200) throw '*⚠️ 𝙴𝚁𝚁𝙾𝚁, 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙻𝙾 𝙼𝙰𝚂 𝚃𝙰𝚁𝙳𝙴*';
       const {server, frontaddr, session, signature, question, progression, step} = anu.result;
