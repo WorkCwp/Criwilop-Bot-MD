@@ -11,14 +11,14 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   if (!text) throw `_*< DESCARGAS - PLAY />*_\n\n*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
-    if (command === 'play') {
+    if (command === 'playy') {
       additionalText = 'audio';
-    } else if (command === 'play2') {
+    } else if (command === 'playy2') {
       additionalText = 'vídeo';
     }
     const texto1 = `_*< DESCARGAS - PLAY />*_\n\n▢ *Título:* ${yt_play[0].title}\n\n▢ *Publicado:* ${yt_play[0].ago}\n\n▢ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n▢ *Autor:* ${yt_play[0].author.name}\n\n▢ *ID:* ${yt_play[0].videoId}\n\n▢ *Tipo:* ${yt_play[0].type}\n\n▢ *Enlace:* ${yt_play[0].url}\n\n▢ *Canal:* ${yt_play[0].author.url}\n\n*[ ℹ️ ] Se está enviando el ${additionalText}. espere...*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
-    if (command == 'play') {
+    if (command == 'playy') {
     try {   
     const audio = global.API('ApiEmpire', `/api/v1/ytmp3?url=${yt_play[0].url}`)
     const ttl = await yt_play[0].title
@@ -40,7 +40,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }} catch {
     throw '_*< DESCARGAS - PLAY />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
     }}
-    if (command == 'play2') {
+    if (command == 'playy2') {
     try {   
     const video = global.API('ApiEmpire', `/api/v1/ytmp4?url=${yt_play[0].url}`)
     const ttl2 = await yt_play[0].title
@@ -64,7 +64,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.command = /^(play|play2)$/i;
+handler.command = /^(playy|playy2)$/i;
 export default handler;
 
 async function search(query, options = {}) {
