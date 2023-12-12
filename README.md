@@ -21,8 +21,13 @@
 <a href="https://wa.me/573244488043"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ## `AGRADECIMIENTOS & CREDITOS` 
+
+<div><button id="boton" type="button">Azamijs </button></div>
+<a href="https://github.com/AzamiJs"><img src="https://github.com/AzamiJs.png" width="150" height="150" alt="BochilGaming"/></a>
+
 <div><button id="boton" type="button">games-wabot-md - By BochilGaming </button></div>
 <a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
+
 <div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
 <a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 
