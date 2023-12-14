@@ -1,14 +1,16 @@
-import {googleImage} from '@bochilteam/scraper';
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!text) throw `*⚠️ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Minecraft*`;
-  //if (m.text.includes('gore') || m.text.includes('cp')|| m.text.includes('porno')|| m.text.includes('Gore')|| m.text.includes('rule')|| m.text.includes('CP')|| m.text.includes('Rule34')) return m.reply('⚠️ 𝙽𝙾 𝙿𝚄𝙴𝙳𝙾 𝙴𝙽𝚅𝙸𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙽𝚃𝙴𝙽𝙸𝙴𝙽𝙳𝙾 𝙴𝚂𝚃𝙰 𝙿𝚁𝙾𝙷𝙸𝙱𝙸𝙳𝙾 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾\n𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny');
-  const res = await googleImage(text);
-  const image = await res.getRandom();
-  const link = image;
-  conn.sendFile(m.chat, link, 'error.jpg', `🔎 *𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴:* ${text}\n🔗 *𝙻𝙸𝙽𝙺* ${link}\n🌎 *𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁:* Google`, m);
-};
-handler.help = ['gimage <query>', 'imagen <query>'];
-handler.tags = ['internet', 'tools'];
-handler.admin = true;
-handler.command = /^(gimage|image|imagen)$/i;
-export default handler;
+import { googleImage } from '@bochilteam/scraper'
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (!text) throw `*⚠️ INGRESE UN TITULO A BUSCAR*`
+const prohibited = ['caca', 'polla', 'porno', 'porn', 'gore', 'cum', 'semen', 'puta', 'puto', 'culo', 'putita', 'putito','pussy', 'hentai', 'pene', 'coño', 'asesinato', 'zoofilia', 'mia khalifa', 'desnudo', 'desnuda', 'cuca', 'chocha', 'muertos', 'pornhub', 'xnxx', 'xvideos', 'teta', 'vagina', 'marsha may', 'misha cross', 'sexmex', 'furry', 'furro', 'furra', 'xxx', 'rule34', 'panocha', 'pedofilia', 'necrofilia', 'pinga', 'horny', 'ass', 'nude', 'popo', 'nsfw', 'femdom', 'futanari', 'erofeet', 'sexo', 'sex', 'yuri', 'ero', 'ecchi', 'blowjob', 'anal', 'ahegao', 'pija', 'verga', 'trasero', 'violation', 'violacion', 'bdsm', 'cachonda', '+18', 'cp', 'mia marin', 'lana rhoades', 'cepesito', 'hot', 'buceta', 'nopor', 'xxx']
+if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('*⚠️ PARA BUSCAR ESE CONTENIDO SI ERES BUENO, PERO LA DE CHAMBEAR NO SE LA SABE*')      
+const res = await googleImage(text)
+let image = res.getRandom()
+let link = image
+conn.sendFile(m.chat, link, 'error.jpg', `*🍁 Resultado de busqueda: ${text}*`, m)
+}
+handler.help = ['gimage <query>', 'imagen <query>']
+handler.tags = ['internet', 'tools']
+handler.command = /^(gimage|image|imagen)$/i
+handler.exp = 20
+handler.money = 50
+export default handler
