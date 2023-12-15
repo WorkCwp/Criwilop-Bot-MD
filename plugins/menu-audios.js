@@ -35,6 +35,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   🔸 *_Muchos mensajes_*
   🔸 *_No me hables_*
   🔸 *_No me hagas usar esto_*
+  🔸 *_identificate_*
   
 *╰───── • ◆ • ─────┅┅┄┄* 
 *_BY: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦_*`.trim();
