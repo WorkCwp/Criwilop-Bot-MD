@@ -9,10 +9,12 @@ try {
 let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]
-const buttons = [
+
+/*const buttons = [
 { buttonId: `.yta ${url}`, buttonText: { displayText: 'Aᴜᴅɪᴏ 🎵' }, type: 1 },
 { buttonId: `.ytv ${url}`, buttonText: { displayText: 'Vɪᴅᴇᴏ 🎥' }, type: 1 },
-{ buttonId: `.ytgetdl ${url}`, buttonText: { displayText: 'Cᴀʟɪᴅᴀᴅᴇs📁' }, type: 1 }, ]    
+{ buttonId: `.ytgetdl ${url}`, buttonText: { displayText: 'Cᴀʟɪᴅᴀᴅᴇs📁' }, type: 1 }, ]*/
+	
 let texto1 = `*⊜─⌈📻 ◜YouTube Play◞ 📻⌋─⊜*
 
 ❏ 📓 *Título:* ${title}
@@ -20,7 +22,7 @@ let texto1 = `*⊜─⌈📻 ◜YouTube Play◞ 📻⌋─⊜*
 ❏ ⏰ *Duración:* ${timestamp}
 ❏ 👀 *Vistas:* ${views}
 `
-let buttonMessage = {
+/*let buttonMessage = {
 "document": { url: "https://wa.me/50499698072" }, 
 "fileName": botname, 
 "mimetype": 'application/vnd.ms-excel',
@@ -40,7 +42,7 @@ contextInfo: {
 "thumbnail": await (await fetch(thumbnail)).buffer(),
 "mediaUrl": `${url}`,
 "sourceUrl": linkgc }}} 
-conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })*/
 }catch(e){
 m.reply('⚠️ *_Error, porfavor vuelva a intentarlo._*')
 console.log(e)}}
