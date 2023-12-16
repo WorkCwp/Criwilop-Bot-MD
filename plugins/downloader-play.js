@@ -44,8 +44,8 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 }catch(e){
 m.reply('⚠️ *_Error, porfavor vuelva a intentarlo._*')
 console.log(e)}}
-handler.help = ['playy', 'playy2'].map(v => v + ' *<texto>*')
+handler.help = ['playx', 'playx2'].map(v => v + ' *<texto>*')
 handler.tags = ['downloader']
-handler.command = /^playy2?$/i
+handler.command = /^playx?$/i
 handler.register = true
 export default handler
