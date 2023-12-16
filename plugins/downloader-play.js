@@ -47,5 +47,4 @@ console.log(e)}}
 handler.help = ['playx', 'playx2'].map(v => v + ' *<texto>*')
 handler.tags = ['downloader']
 handler.command = /^playx?$/i
-handler.register = true
 export default handler
