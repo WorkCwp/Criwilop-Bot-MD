@@ -1,5 +1,5 @@
 import fs from 'fs';
-const timeout = 60000;
+const timeout = 30000;
 const poin = 1000;
 const handler = async (m, {conn, usedPrefix}) => {
   conn.tekateki = conn.tekateki ? conn.tekateki : {};
@@ -13,9 +13,9 @@ const handler = async (m, {conn, usedPrefix}) => {
   const _clue = json.response;
   const clue = _clue.replace(/[A-Za-z]/g, '_');
   const caption = `
-ⷮ *${json.question}*
-*• Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
-*• Bono:* +${poin} Exp
+ 🧁 *${json.question}*
+ 🥧 *Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
+ 🍺 *Bono:* +${poin} Exp
 `.trim();
   conn.tekateki[id] = [
     await conn.reply(m.chat, caption, m), json,
