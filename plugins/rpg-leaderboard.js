@@ -22,12 +22,12 @@ const handler = async (m, {conn, args, participants}) => {
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
 *╭───────────⊱◈◈◈⊰────────┅┅┄┄*
-        *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦*
-  *╭───────────⊱◈◈◈⊰────────┅┅┄┄*
-    🔸 *TOP ${len} EXP 🕶️*
+               *♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑𝑩𝒐𝒕-𝑴𝑫࿐⛦*
+               *───────•••───────
+              🔸 *TOP ${len} EXP 🕶️*
 
-    *🍂 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
-  *╰───────────⊱◈◈◈⊰────────┅┅┄┄*
+              *🍂 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
+               ───────•••───────
    
    ${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n`}
 
