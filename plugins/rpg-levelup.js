@@ -14,8 +14,7 @@ const handler = async (m, { conn }) => {
 *🔸 Nivel actual:* ${user.level}
 *🔸 Rango actual:* ${user.role}
 *🔸 Puntos de Experiencia:* ${user.exp - min}/${xp}
-
-*☣️ Para ascender de nivel necesitas obtener ${max - user.exp} puntos de experiencia más. Sigue interactuando con el Bot!.*`.trim();
+ ❄️ *Para ascender de nivel necesitas obtener ${max - user.exp} puntos de experiencia más. Sigue interactuando con el Bot!.*`.trim();
     return conn.sendMessage(m.chat, {text: message, mentions: [m.sender]}, {quoted: m});
   }
   const before = user.level * 1;
@@ -25,11 +24,11 @@ const handler = async (m, { conn }) => {
     const levelUpDetails = `
 🚀 *Nuevo Nivel Alcanzado*
 
-*◉ Nivel anterior:* ${before}
-*◉ Nuevo nivel:* ${user.level}
-*◉ Rango actual:* ${user.role}
+ 🔸 * Nivel anterior:* ${before}
+ 🔸 *Nuevo nivel:* ${user.level}
+ 🔸 *Rango actual:* ${user.role}
 
-*—◉ Continúa explorando y realizando misiones para alcanzar nuevas alturas en el Gremio de Aventureros. Sigue interactuando con el Bot!.*`.trim();
+ 🍡 *Continúa explorando y realizando misiones para alcanzar nuevas alturas en el Gremio de Aventureros. Sigue interactuando con el Bot!.*`.trim();
     try {
       const levelUpImage = await levelup(levelUpMessage, user.level);
       conn.sendFile(m.chat, levelUpImage, 'levelup.jpg', levelUpDetails, m);
