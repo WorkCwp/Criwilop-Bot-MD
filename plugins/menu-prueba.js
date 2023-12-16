@@ -1,30 +1,28 @@
-const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
+import fetch from 'node-fetch';
+
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+  if (!text) {
+    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Proporciona un texto.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
+  }
+
   try {
-    
-    let pp = imagen3;
+    conn.sendPresenceUpdate('composing', m.chat);
 
-    const str = `Menú 🍷`.trim();
+    const API_URL = `https://vihangayt.me/tools/bard?q=${encodeURIComponent(text)}`;
+    const response = await fetch(API_URL);
+    const data = await response.json();
 
-    if (m.isGroup) {
-      const fkontak2 = {
-        'key': { 'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo' },
-        'message': {
-          'contactMessage': {
-            'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-          }
-        },
-        'participant': '0@s.whatsapp.net'
-      };
-      conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net') }, { quoted: fkontak2 });
+    if (data.status && data.data) {
+      const respuestaAPI = data.data;
+      conn.reply(m.chat, respuestaAPI, m);
+    } else {
+      throw '_*< IA - BARD />*_\n\n*[ ℹ️ ] No se pudo obtener una respuesta válida.*';
     }
   } catch (error) {
-    console.error(error);
-    conn.reply(m.chat, '*⚠️ Error*', m);
+    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
   }
 };
 
-handler.command = /^(X)$/i;
-handler.exp = 50;
-handler.fail = null;
+handler.command = /^bard$/i;
 
 export default handler;
