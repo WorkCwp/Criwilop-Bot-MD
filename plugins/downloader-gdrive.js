@@ -23,7 +23,7 @@ const handler = async (m, { conn, args }) => {
   }
 };
 
-handler.command = /^(gdrive)$/i;
+handler.command = /^(gdrive-fix)$/i;
 
 export default handler;
 
