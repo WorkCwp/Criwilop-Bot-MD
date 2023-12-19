@@ -1,4 +1,4 @@
-/*import fetch from 'node-fetch';
+import fetch from 'node-fetch';
 import { sizeFormatter } from 'human-readable';
 
 const formatSize = sizeFormatter({
@@ -65,4 +65,3 @@ async function GDriveDl(url) {
     mimetype: data.headers.get('content-type')
   };
 }
-*/
