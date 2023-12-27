@@ -27,7 +27,7 @@ const text = `*╭───── • ◆ • ─────┅┅┄┄*
         'mediaUrl': 'https://github.com/WorkCwp/Criwilop-Bot-MD',
         'mediaType': 2,
         'previewType': 'pdf',
-        'title': '😗👉🍡',
+        'title': '♬ ♬ ♬',
         'body': wm,
         'thumbnail': imagen1,
         'sourceUrl': 'https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs'}},
