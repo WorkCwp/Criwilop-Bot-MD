@@ -2,6 +2,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
 const document = doc[Math.floor(Math.random() * doc.length)];
 const text = `*╭───── • ◆ • ─────┅┅┄┄*
+
    *🍡 ᴏᴡɴᴇʀ: ♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦ wa.me/573244488043*
 
    *🍂 𝙲𝙾𝙻𝙰𝙱𝙾𝚁𝙰𝙳𝙾𝚁 𝟷:*
@@ -11,6 +12,7 @@ const text = `*╭───── • ◆ • ─────┅┅┄┄*
    *🍂 𝙲𝙾𝙻𝙰𝙱𝙾𝚁𝙰𝙳𝙾𝚁 2:*
 
    *༒𝙑𝙄𝘾𝙏𝙊𝙍_𝘽𝙄𝙕𝙀𝙍𝘼𝙋༒ wa.me/59897758548*
+   
  *╰───── • ◆ • ─────┅┅┄┄*  `.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/WorkCwp/Criwilop-Bot-MD`},
