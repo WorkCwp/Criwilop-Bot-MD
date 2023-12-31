@@ -34,7 +34,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
     throw '*⚠️ 𝙴𝚁𝚁𝙾r.';
   }
 };
-handler.command = /^(fixnx)$/i;
+handler.command = /^(dlxn)$/i;
 export default handler;
 
 async function xnxxdl(URL) {
