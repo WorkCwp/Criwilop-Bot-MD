@@ -4,7 +4,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
   if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*⚠️ 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*';
   if (!args[0]) throw `*título*`;
   try {
-    await conn.reply(m.chat, '⚠️ mensaje 1\n\nmensaje 2', m);
+    await conn.reply(m.chat, '😐', m);
     let xnxxLink = '';
     if (args[0].includes('xnxx')) {
       xnxxLink = args[0];
