@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 const handler = async (m, {text, usedPrefix, command}) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*⚠️ Los comandos +18 están desactivados en este grupo, si es admin y desea activarlos use ${usedPrefix}enable modohorny*`;   
-  if (!text) throw `*⚠️ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Con mi prima*`;
+  if (!text) throw `*nombre*`;
   try {
     const vids_ = {
       from: m.sender,
@@ -15,7 +15,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*⚠️ Los comandos +
     }
     const res = await xnxxsearch(text);
     const json = res.result;
-    let cap = `*🔍 RESULTADOS DE LA BUSQUEDA:* ${text.toUpperCase()}\n\n`;
+    let cap = `*🔍* ${text.toUpperCase()}\n\n`;
     let count = 1;
     for (const v of json) {
       const linkXXX = v.link;
@@ -32,7 +32,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*⚠️ Los comandos +
 };
 handler.help = ['xnxxsearch'].map((v) => v + ' <query>');
 handler.tags = ['downloader', 'premium'];
-handler.command = /^xnxxsearch|xnxxs$/i;
+handler.command = /^fixnxs$/i;
 export default handler;
 
 async function xnxxsearch(query) {
