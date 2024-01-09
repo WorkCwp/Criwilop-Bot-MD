@@ -50,41 +50,7 @@ fakeData.name_tag = text //`@${m.mentionedJid[0].split('@')[0]}` //conn.getName(
 fakeData.name_tag = text    
 }
     
-const doxeo = `*[ ✔ ] Persona doxxeada con éxito.*\n\n*—◉ Doxxeo realizado en:*\n*◉ ${executionTime} segundos.*\n*—◉ Resultados obtenidos del doxxeo:*
-
-*Nombre:* ${fakeData.name_tag}
-*Ip:* ${fakeData.ip}
-*N:* ${fakeData.n}
-*W:* ${fakeData.w}
-*SS NUMBER:* ${fakeData.ssNumber}
-*CAMARA DEL CELULAR:* ${fakeData.fakeCameraLink}
-*IPV6:* ${fakeData.ipv6}
-*UPNP:* ${fakeData.upnp}
-*DMZ:* ${fakeData.dmz}
-*MAC:* ${fakeData.mac}
-*ISP:* ${fakeData.isp}
-*DNS:* ${fakeData.dns}
-*ALT DNS:* ${fakeData.altDns}
-*DNS SUFFIX:* ${fakeData.dnsSuffix}
-*WAN:* ${fakeData.wan}
-*WAN TYPE:* ${fakeData.wanType}
-*GATEWAY:* ${fakeData.gateway}
-*SUBNET MASK:* ${fakeData.subnetMask}
-*UDP OPEN PORTS:* ${fakeData.udpOpenPorts}
-*TCP OPEN PORTS:* ${fakeData.tcpOpenPorts}
-*ROUTER VENDEDOR:* ${fakeData.routerVendor}
-*DEVICE VENDEDOR:* ${fakeData.deviceVendor}
-*CONNECTION TYPE:* ${fakeData.connectionType}
-*ICMPHOPS:* ${fakeData.icmphops}
-*HTTP:* ${fakeData.http}
-*Http:* ${fakeData.http2}
-*Http:* ${fakeData.http3}
-*Upd:* ${fakeData.udp}
-*Tcp:* ${fakeData.tcp1}
-*Tcp:* ${fakeData.tcp2}
-*Tcp:* ${fakeData.tcp3}
-*EXTERNAL MAC:* ${fakeData.externalMac}
-*MODEM JUMPS:* ${fakeData.modemJumps}`;
+const doxeo = `*Ponte a chambear mejor*`;
     
 async function loading() {
 var hawemod = [
