@@ -18,7 +18,7 @@
 
  ### `CONTACTO DE SOPORTE`
 
-<a href="https://wa.me/573244488043"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/573003025991"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ## `AGRADECIMIENTOS & CREDITOS` 
 
@@ -32,6 +32,6 @@
 <a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 
 ## `EDITOR & PROPIETARIO DEL BOT` 
-<a href="https://github.com/WorkCwp"><img src="./media/img/Menu.png" width="250" height="250" alt="<WorkCwp\>"/></a>
+<a href="https://github.com/WorkCwp"><img src="https://github.com/WorkCwp.png" width="250" height="250" alt="<WorkCwp\>"/></a>
   
 `♰⍣𝑪𝒓𝒊𝒘𝒊𝒍𝒐𝒑࿐⛦`
