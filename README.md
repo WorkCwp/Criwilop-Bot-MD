@@ -11,6 +11,10 @@
 ## 𝑣𝑖𝑠𝑡𝑎𝑠 👀
 <p align="center"><img src="https://profile-counter.glitch.me/{Criwilop}/count.svg" alt="neoxr :: Visitor's Count" /></p>
 
+### `「◆ 👑 Directorio de enlaces: ◆」`
+
+<a href="https://atom.bio/WorkCwp" target="blank"><img src="https://img.shields.io/badge/Atom-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+
 ### `「◆ ✨ Grupo del Bot;Ofcᬊ ✨ ◆」`
 
 <a href="https://chat.whatsapp.com/EjdIzXmiHreFkPAvx3mEHH" target="blank"><img src="https://img.shields.io/badge/GRUPO-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
